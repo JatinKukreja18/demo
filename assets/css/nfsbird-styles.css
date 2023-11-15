@@ -1,0 +1,5328 @@
+/*
+! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
+*//*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+.nfsbird *,
+.nfsbird ::before,
+.nfsbird ::after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: currentColor; /* 2 */
+}
+
+.nfsbird ::before,
+.nfsbird ::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+*/
+
+.nfsbird {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4; /* 3 */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+  -webkit-font-feature-settings: normal;
+     -moz-font-feature-settings: normal;
+          font-feature-settings: normal; /* 5 */
+  font-variation-settings: normal; /* 6 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+.nfsbird {
+  margin: 0; /* 1 */
+  line-height: inherit; /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+.nfsbird hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+  border-top-width: 1px; /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+.nfsbird abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+.nfsbird h1,
+.nfsbird h2,
+.nfsbird h3,
+.nfsbird h4,
+.nfsbird h5,
+.nfsbird h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+.nfsbird a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+.nfsbird b,
+.nfsbird strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font family by default.
+2. Correct the odd `em` font sizing in all browsers.
+*/
+
+.nfsbird code,
+.nfsbird kbd,
+.nfsbird samp,
+.nfsbird pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+.nfsbird small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+.nfsbird sub,
+.nfsbird sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.nfsbird sub {
+  bottom: -0.25em;
+}
+
+.nfsbird sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+.nfsbird table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+  border-collapse: collapse; /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+.nfsbird button,
+.nfsbird input,
+.nfsbird optgroup,
+.nfsbird select,
+.nfsbird textarea {
+  font-family: inherit; /* 1 */
+  -webkit-font-feature-settings: inherit;
+     -moz-font-feature-settings: inherit;
+          font-feature-settings: inherit; /* 1 */
+  font-variation-settings: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  font-weight: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  color: inherit; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+.nfsbird button,
+.nfsbird select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+.nfsbird button,
+.nfsbird [type='button'],
+.nfsbird [type='reset'],
+.nfsbird [type='submit'] {
+  -webkit-appearance: button; /* 1 */
+  background-color: transparent; /* 2 */
+  background-image: none; /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+.nfsbird :-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+.nfsbird :-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+.nfsbird progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+.nfsbird ::-webkit-inner-spin-button,
+.nfsbird ::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+.nfsbird [type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+.nfsbird ::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+.nfsbird ::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+.nfsbird summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+.nfsbird blockquote,
+.nfsbird dl,
+.nfsbird dd,
+.nfsbird h1,
+.nfsbird h2,
+.nfsbird h3,
+.nfsbird h4,
+.nfsbird h5,
+.nfsbird h6,
+.nfsbird hr,
+.nfsbird figure,
+.nfsbird p,
+.nfsbird pre {
+  margin: 0;
+}
+
+.nfsbird fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+.nfsbird legend {
+  padding: 0;
+}
+
+.nfsbird ol,
+.nfsbird ul,
+.nfsbird menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+.nfsbird dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+.nfsbird textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+.nfsbird input::-webkit-input-placeholder, .nfsbird textarea::-webkit-input-placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+.nfsbird input::-moz-placeholder, .nfsbird textarea::-moz-placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+.nfsbird input:-ms-input-placeholder, .nfsbird textarea:-ms-input-placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+.nfsbird input::-ms-input-placeholder, .nfsbird textarea::-ms-input-placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+.nfsbird input::placeholder,
+.nfsbird textarea::placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+.nfsbird button,
+.nfsbird [role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+.nfsbird :disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+.nfsbird img,
+.nfsbird svg,
+.nfsbird video,
+.nfsbird canvas,
+.nfsbird audio,
+.nfsbird iframe,
+.nfsbird embed,
+.nfsbird object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+.nfsbird img,
+.nfsbird video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+.nfsbird [hidden] {
+  display: none;
+}
+    .nfsbird-root {
+  scroll-behavior: smooth;
+}
+
+    /* Add transition to all links */
+    .nfsbird a {
+  -webkit-transition-property: color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;
+  transition-property: color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;
+  -moz-transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, -moz-text-decoration-color;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color, -moz-text-decoration-color;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     -moz-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 300ms;
+     -moz-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+    .nfsbird .rd-container-outer {
+        max-width: 2560px;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        margin: auto;
+    }
+
+        @media (min-width: 1200px) {
+
+    .nfsbird .rd-container-outer {
+            padding-left: 5rem;
+            padding-right: 5rem
+    }
+        }
+    .nfsbird .rd-container-full-bleed{
+        max-width: 2560px;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        margin: auto;
+
+     
+    }
+    .nfsbird .rd-container-outer-collapsed-mobile {
+        padding-left: 0;
+        padding-right: 0;
+    }
+        
+        @media (min-width: 1024px) {
+    .nfsbird .rd-container-outer-collapsed-mobile {
+            padding-left: 5rem;
+            padding-right: 5rem
+    }
+        }
+
+    .nfsbird .rd-container-inner {
+        /* max-width: calc(100% - 360px); */
+        /* padding-left: 13.5rem;
+        padding-right: 13.5rem; */
+        margin: auto;
+        max-width: -webkit-calc(100% - 40px);
+        max-width: -moz-calc(100% - 40px);
+        max-width: calc(100% - 40px); 
+    }
+
+        @media (min-width: 768px) {
+
+    .nfsbird .rd-container-inner {
+            max-width: -webkit-calc(100% - 290px);
+            max-width: -moz-calc(100% - 290px);
+            max-width: calc(100% - 290px) 
+    }
+        } 
+        @media (min-width: 920px) {
+
+    .nfsbird .rd-container-inner {
+            max-width: -webkit-calc(100% - 460px);
+            max-width: -moz-calc(100% - 460px);
+            max-width: calc(100% - 460px) 
+    }
+        } 
+        @media (min-width: 1024px) {
+
+    .nfsbird .rd-container-inner {
+            max-width: -webkit-calc(100% - 290px);
+            max-width: -moz-calc(100% - 290px);
+            max-width: calc(100% - 290px) 
+    }
+        }
+        @media (min-width: 1200px) {
+
+    .nfsbird .rd-container-inner {
+            width: -webkit-calc(100% - 380px);
+            width: -moz-calc(100% - 380px);
+            width: calc(100% - 380px);
+            max-width: -webkit-calc(2560px - 380px);
+            max-width: -moz-calc(2560px - 380px);
+            max-width: calc(2560px - 380px) 
+    }
+        }   
+        @media (min-width: 1536px) {
+
+    .nfsbird .rd-container-inner {
+            width: -webkit-calc(100% - 600px);
+            width: -moz-calc(100% - 600px);
+            width: calc(100% - 600px);
+            max-width: -webkit-calc(2560px - 600px);
+            max-width: -moz-calc(2560px - 600px);
+            max-width: calc(2560px - 600px) 
+    }
+        }
+
+    /* .splide__pagination {} */
+
+    /* .rd-slider-controls.nfs-wide {
+        width: 60%;
+        margin-bottom: 26px;
+    } */
+
+    .nfsbird .rd-slider-controls.nfs-wide .splide__pagination {
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -moz-inline-box;
+        display: inline-flex;
+        -webkit-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+        gap: 5px;
+        bottom: 20px;
+    }
+
+    /* .rd-slider-controls.nfs-wide .splide__pagination li {
+        width: 100%;
+    } */
+
+    .nfsbird .rd-slider-controls.nfs-wide .splide__pagination__page {
+        width: 30px;
+        border-radius: 3px;
+        background: transparent;
+        border: none;
+        height: 2px;
+        position: relative;
+        overflow: hidden;
+        z-index: 0;
+    }
+
+    .nfsbird .rd-slider-controls.nfs-wide .splide__pagination__page::before {
+        width: 100%;
+        background-color: currentColor;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: .25;
+        content: '';
+    }
+
+    .nfsbird .rd-slider-controls.nfs-wide .splide__pagination__page::after {
+        width: 0%;
+        background-color: currentColor;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .nfsbird .rd-autoplay-stopped .rd-slider-controls.nfs-wide .splide__pagination__page.is-active::after{
+        width: 100%;
+        -webkit-transition: 0s;
+        -moz-transition: 0s;
+        transition: 0s;
+    }
+    .nfsbird .rd-slider-controls.nfs-wide .splide__pagination__page.is-active::after {
+        /* transition-delay: 100; */
+        width: 100%;
+        -webkit-transition: width 5.4s;
+        -moz-transition: width 5.4s;
+        transition: width 5.4s;
+    }
+
+     .nfsbird .splide-wide .splide__arrows {
+        opacity: 0;
+    } 
+
+    .nfsbird .splide-wide:hover .splide__arrows {
+        opacity: 1;
+    }
+
+    .nfsbird .splide-wide  .splide__arrow.splide__arrow--prev {
+        left: 0;
+        top: 80px;
+        height: -webkit-calc(100% - 160px);
+        height: -moz-calc(100% - 160px);
+        height: calc(100% - 160px);
+    }
+    
+    .nfsbird .splide-wide  .splide__arrow.splide__arrow--next {
+        right: 0;
+        top: 80px;
+        height: -webkit-calc(100% - 160px);
+        height: -moz-calc(100% - 160px);
+        height: calc(100% - 160px);
+    }
+    .nfsbird .splide-wide  .splide__arrow.splide__arrow--next:disabled,
+    .nfsbird .splide-wide  .splide__arrow.splide__arrow--prev:disabled{
+        opacity: 0;
+    }
+    .nfsbird .splide-wide-slide-bg-image {
+        z-index: -1;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: bottom center;
+           object-position: bottom center;
+    }
+
+    .nfsbird .splide-wide-slide-bg-image.bottom-right{
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: bottom right;
+           object-position: bottom right;
+    }
+
+    .nfsbird .splide-wide-slide-bg-lottie {
+        z-index: -1;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+            }
+    .nfsbird .rd-slider-controls.rd-slider-control-gradient .splide__arrow{
+        height: -webkit-calc(100% - 40px);
+        height: -moz-calc(100% - 40px);
+        height: calc(100% - 40px);
+        top: 20px;
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+                box-sizing: border-box;
+        overflow: hidden;
+        min-width:unset;
+    }
+
+        @media (min-width: 768px) {
+    .nfsbird .rd-slider-controls.rd-slider-control-gradient .splide__arrow{
+            width:50px
+    }
+        }
+        @media (min-width: 1024px) {
+    .nfsbird .rd-slider-controls.rd-slider-control-gradient .splide__arrow{
+            width:90px
+    }
+        }
+        @media (min-width: 1200px) {
+    .nfsbird .rd-slider-controls.rd-slider-control-gradient .splide__arrow{
+            width: 170px
+    }
+        }
+        @media (min-width: 1536px) {
+    .nfsbird .rd-slider-controls.rd-slider-control-gradient .splide__arrow{
+            width: 280px
+    }
+        }
+    .nfsbird .rd-slider-controls.rd-slider-control-gradient .splide__arrow--next{
+        right: 0;
+        background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(#000000));
+        background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #000000 100%);
+        background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #000000 100%);
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+        border-top-left-radius:14px;
+        border-bottom-left-radius:14px;
+    }
+    .nfsbird .rd-slider-controls.rd-slider-control-gradient .splide__arrow--prev{
+        left: 0;
+        background: -webkit-gradient(linear, left top, right top, from(#000000), to(rgba(0, 0, 0, 0)));
+        background: -webkit-linear-gradient(left, #000000 0%, rgba(0, 0, 0, 0) 100%);
+        background: -moz-linear-gradient(left, #000000 0%, rgba(0, 0, 0, 0) 100%);
+        background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+        border-top-right-radius:14px;
+        border-bottom-right-radius:14px;
+    }
+    .nfsbird .rd-slider-controls.rd-slider-control-gradient.white .splide__arrow--next{
+        background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(#ffffff));
+        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+        background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+        color: #000;
+    }
+    .nfsbird .rd-slider-controls.rd-slider-control-gradient.white .splide__arrow--prev{
+        background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(rgba(255, 255, 255, 0)));
+        background: -webkit-linear-gradient(left, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+        background: -moz-linear-gradient(left, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+        background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+        color: #000;
+    }
+    .nfsbird .rd-slider-controls.rd-slider-control-gradient.white .splide__arrow--prev:hover,
+    .nfsbird .rd-slider-controls.rd-slider-control-gradient.white .splide__arrow--next:hover{
+        color:rgba(0, 177, 242, 1)
+    }
+    .nfsbird #digitalChannel-carousel >.splide__track,
+    .nfsbird #deals-carousel .splide__track { 
+        padding-top:15px;
+        padding-bottom: 30px;
+     }
+        @media (min-width: 768px) {
+    .nfsbird #digitalChannel-carousel >.splide__track,
+    .nfsbird #deals-carousel .splide__track {
+            padding-top:20px;
+            padding-bottom: 20px
+     }
+        }
+    @media screen and (min-width:768px) {
+        .nfsbird .rd-grid-cols-card{
+            grid-template-columns: 34px minmax(34px, 1fr) !important
+        }
+        
+    }
+    .nfsbird :root {
+        --bg-black-gradient: 60%;
+    }
+    .nfsbird .fade-me-up{
+        opacity: 0;
+        -webkit-transform: translateY(30px);
+           -moz-transform: translateY(30px);
+            -ms-transform: translateY(30px);
+                transform: translateY(30px);
+        -webkit-transition: opacity 1s, -webkit-transform 1s;
+        transition: opacity 1s, -webkit-transform 1s;
+        -moz-transition: opacity 1s, transform 1s, -moz-transform 1s;
+        transition: opacity 1s, transform 1s;
+        transition: opacity 1s, transform 1s, -webkit-transform 1s, -moz-transform 1s;
+        /* display: none; */
+    }
+    .nfsbird .fade-me-up.faded{
+        opacity: 1;
+        /* display: block; */
+        -webkit-transform: translateY(0);
+           -moz-transform: translateY(0);
+            -ms-transform: translateY(0);
+                transform: translateY(0);
+    }
+    .nfsbird .rd-hidden-br-mobile br{
+        display: none;
+    }
+        @media (min-width: 1024px) {
+    .nfsbird .rd-hidden-br-mobile br{
+            display: inline
+    }
+        }
+
+    .nfsbird .rd-top-gradient-wrapper{
+        background: var(--content-top-bg-gradient);
+    }
+    .nfsbird .rd-bottom-gradient-wrapper{
+        background: var(--content-bottom-bg-gradient);
+    }
+    /* Load fonts */
+
+    /* In case the browser does not support variable fonts */
+    @supports not (font-variation-settings: normal) {
+        @font-face {
+          font-family: "Open Sans";
+          src:
+              url('../fonts/static/woff2/OpenSans-Regular.woff2') format('woff2'),
+              url('../fonts/static/ttf/OpenSans-Regular.ttf') format('truetype');
+          font-weight: 400;
+          font-display: swap;
+          font-style: normal;
+        }
+        @font-face {
+          font-family: "Open Sans";
+          src:
+            url('../fonts/static/woff2/OpenSans-Medium.woff2') format('woff2'),
+            url('../fonts/static/ttf/OpenSans-Medium.ttf') format('truetype');
+          font-weight: 500;
+          font-display: swap;
+          font-style: normal;
+        }
+        @font-face {
+          font-family: "Open Sans";
+          src:
+            url('../fonts/static/woff2/OpenSans-SemiBold.woff2') format('woff2'),
+            url('../fonts/static/ttf/OpenSans-SemiBold.ttf') format('truetype');
+          font-weight: 600;
+          font-display: swap;
+          font-style: normal;
+        }
+        @font-face {
+          font-family: "Open Sans";
+          src:
+            url('../fonts/static/woff2/OpenSans-Bold.woff2') format('woff2'),
+            url('../fonts/static/ttf/OpenSans-Bold.ttf') format('truetype');
+          font-weight: 700;
+          font-display: swap;
+          font-style: normal;
+        }
+
+        /* Italics */
+        @font-face {
+          font-family: "Open Sans";
+          src:
+            url('../fonts/static/woff2/OpenSans-RegularItalic.woff2') format('woff2'),
+            url('../fonts/static/ttf/OpenSans-RegularItalic.ttf') format('truetype');
+          font-weight: 400;
+          font-display: swap;
+          font-style: italic;
+        }
+        @font-face {
+          font-family: "Open Sans";
+          src:
+            url('../fonts/static/woff2/OpenSans-MediumItalic.woff2') format('woff2'),
+            url('../fonts/static/ttf/OpenSans-MediumItalic.ttf') format('truetype');
+          font-weight: 500;
+          font-display: swap;
+          font-style: italic;
+        }
+        @font-face {
+          font-family: "Open Sans";
+          src:
+            url('../fonts/static/woff2/OpenSans-SemiBoldItalic.woff2') format('woff2'),
+            url('../fonts/static/ttf/OpenSans-SemiBoldItalic.ttf') format('truetype');
+          font-weight: 600;
+          font-display: swap;
+          font-style: italic;
+        }
+        @font-face {
+          font-family: "Open Sans";
+          src:
+            url('../fonts/static/woff2/OpenSans-BoldItalic.woff2') format('woff2'),
+            url('../fonts/static/ttf/OpenSans-BoldItalic.ttf') format('truetype');
+          font-weight: 700;
+          font-display: swap;
+          font-style: italic;
+        }
+    }
+
+    /* For modern browsers that support variable fonts */
+    @supports (font-variation-settings: normal) {
+        @font-face {
+            font-family: "Open Sans";
+            src: url('../fonts/open_sans_variable.woff2') format('woff2-variations');
+            src: url('../fonts/open_sans_variable.woff2') format('woff2') tech('variations');
+            font-weight: 300 800;
+            font-display: swap;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: "Open Sans";
+            src: url('../fonts/open_sans_variable_italic.woff2') format('woff2-variations');
+            src: url('../fonts/open_sans_variable_italic.woff2') format('woff2') tech('variations');
+            font-weight: 300 800;
+            font-display: swap;
+            font-style: italic;
+      }
+    }
+
+
+
+    /* Base font sizes and styles */
+
+    /* Class applied to html element to set root font size */
+    .nfsbird-root {
+        font-size: 16px;
+    }
+
+    .nfsbird {
+        font-size: 16px;
+        line-height: 1.36;
+        color: rgba(45, 45, 45, 1);
+        font-weight: 400;
+        font-variation-settings: "wght" 400;
+    }
+
+    .nfsbird body.rd-italic {
+  font-variation-settings: "slnt" 1, "wght" 400;
+}
+
+
+
+    /* Override aggressive reset from legacy CSS */
+    .nfsbird * {
+  font-weight: 400;
+  font-variation-settings: "wght" 400;
+}
+    .nfsbird *.rd-italic {
+  font-variation-settings: "slnt" 1, "wght" 400;
+}
+
+
+
+    /* Unset legacy CSS text stroke and shadow */
+    .nfsbird h1,
+    .nfsbird h2,
+    .nfsbird h3,
+    .nfsbird h4,
+    .nfsbird a,
+    .nfsbird div,
+    .nfsbird em,
+    .nfsbird li,
+    .nfsbird p,
+    .nfsbird span,
+    .nfsbird strong {
+        -webkit-text-stroke-width: 0;
+        text-shadow: none;
+    }
+
+
+
+    /* Typefaces */
+    .nfsbird {
+  font-family: Open Sans, sans-serif;
+}
+
+.nfsbird *, .nfsbird ::before, .nfsbird ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+.nfsbird ::-webkit-backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+.nfsbird ::-ms-backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+.nfsbird ::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+@-webkit-keyframes splide-loading{0%{-webkit-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}
+@-moz-keyframes splide-loading{0%{-moz-transform:rotate(0);transform:rotate(0)}to{-moz-transform:rotate(1turn);transform:rotate(1turn)}}
+@keyframes splide-loading{0%{-webkit-transform:rotate(0);-moz-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(1turn);-moz-transform:rotate(1turn);transform:rotate(1turn)}}
+.nfsbird .splide__track--draggable{-webkit-touch-callout:none;-webkit-user-select:none;-ms-user-select:none;-moz-user-select:none;user-select:none}
+.nfsbird .splide__track--fade>.splide__list>.splide__slide{margin:0!important;opacity:0;z-index:0}
+.nfsbird .splide__track--fade>.splide__list>.splide__slide.is-active{opacity:1;z-index:1}
+.nfsbird .splide--rtl{direction:rtl}
+.nfsbird .splide__track--ttb>.splide__list{display:block}
+.nfsbird .splide__container{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;position:relative}
+.nfsbird .splide__list{-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;backface-visibility:hidden;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:flex;height:100%;margin:0!important;padding:0!important}
+.nfsbird .splide.is-initialized:not(.is-active) .splide__list{display:block}
+.nfsbird .splide__pagination{-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;justify-content:center;margin:0;pointer-events:none}
+.nfsbird .splide__pagination li{display:inline-block;line-height:1;list-style-type:none;margin:0;pointer-events:auto}
+.nfsbird .splide:not(.is-overflow) .splide__pagination{display:none}
+.nfsbird .splide__progress__bar{width:0}
+.nfsbird .splide{position:relative;visibility:hidden}
+.nfsbird .splide.is-initialized,.nfsbird .splide.is-rendered{visibility:visible}
+.nfsbird .splide__slide{-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;backface-visibility:hidden;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-flex-shrink:0;flex-shrink:0;list-style-type:none!important;margin:0;position:relative}
+.nfsbird .splide__slide img{vertical-align:bottom}
+.nfsbird .splide__spinner{-webkit-animation:splide-loading 1s linear infinite;-moz-animation:splide-loading 1s linear infinite;animation:splide-loading 1s linear infinite;border:2px solid #999;border-left-color:transparent;border-radius:50%;bottom:0;contain:strict;display:inline-block;height:20px;left:0;margin:auto;position:absolute;right:0;top:0;width:20px}
+.nfsbird .splide__sr{clip:rect(0 0 0 0);border:0;height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}
+.nfsbird .splide__toggle.is-active .splide__toggle__play,.nfsbird .splide__toggle__pause{display:none}
+.nfsbird .splide__toggle.is-active .splide__toggle__pause{display:inline}
+.nfsbird .splide__track{overflow:hidden;position:relative;z-index:0}
+.nfsbird .rd-container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+}
+@media (min-width: 540px) {
+
+  .nfsbird .rd-container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+
+  .nfsbird .rd-container {
+    max-width: 768px;
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+}
+@media (min-width: 920px) {
+
+  .nfsbird .rd-container {
+    max-width: 920px;
+  }
+}
+@media (min-width: 1024px) {
+
+  .nfsbird .rd-container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1200px) {
+
+  .nfsbird .rd-container {
+    max-width: 1200px;
+  }
+}
+@media (min-width: 1536px) {
+
+  .nfsbird .rd-container {
+    max-width: 1536px;
+  }
+}
+.nfsbird .rd-aspect-h-1 {
+  --tw-aspect-h: 1;
+}
+.nfsbird .rd-aspect-h-2 {
+  --tw-aspect-h: 2;
+}
+.nfsbird .rd-aspect-w-1 {
+  position: relative;
+  padding-bottom: -webkit-calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+  padding-bottom: -moz-calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+  padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+  --tw-aspect-w: 1;
+}
+.nfsbird .rd-aspect-w-1 > * {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.nfsbird .rd-aspect-w-5 {
+  position: relative;
+  padding-bottom: -webkit-calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+  padding-bottom: -moz-calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+  padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+  --tw-aspect-w: 5;
+}
+.nfsbird .rd-aspect-w-5 > * {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+/* Header nav */
+.nfsbird .rd-icon-hamburger {
+  position: relative;
+  height: 1.375rem;
+  width: 1.375rem;
+}
+.nfsbird .rd-icon-hamburger::before,
+        .nfsbird .rd-icon-hamburger::after {
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -moz-transition-property: transform, -moz-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform, -moz-transform;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     -moz-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 300ms;
+     -moz-transition-duration: 300ms;
+          transition-duration: 300ms;
+            content: '';
+}
+.nfsbird .rd-icon-hamburger::before {
+  top: 0.3125rem;
+}
+.nfsbird .rd-icon-hamburger:after {
+  bottom: 0.3125rem;
+}
+.nfsbird .rd-icon-hamburger.rd-icon-cross-markup::before,
+            .nfsbird .rd-icon-hamburger.rd-icon-cross-markup::after {
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -moz-transition-property: transform, -moz-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform, -moz-transform;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     -moz-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 300ms;
+     -moz-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+.nfsbird .rd-icon-hamburger.rd-icon-cross-markup::before {
+  --tw-translate-y: 0.3125rem;
+  --tw-rotate: -45deg;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+     -moz-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.nfsbird .rd-icon-hamburger.rd-icon-cross-markup::after {
+  --tw-translate-y: -0.3125rem;
+  --tw-rotate: 45deg;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+     -moz-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.nfsbird .rd-h-mobile-nav {
+        height: -webkit-calc((var(--rd-vh, 1vh) * 100) - var(--rd-headerHeight) - var(--rd-topNavHeight));
+        height: -moz-calc((var(--rd-vh, 1vh) * 100) - var(--rd-headerHeight) - var(--rd-topNavHeight));
+        height: calc((var(--rd-vh, 1vh) * 100) - var(--rd-headerHeight) - var(--rd-topNavHeight));
+    }
+.nfsbird .rd-primary-nav-item-drawer-feedback {
+  background-color: rgba(226, 246, 255, 1);
+}
+@media (min-width: 1024px) {
+
+  .nfsbird .rd-primary-nav-item-drawer-feedback {
+    background-color: transparent;
+  }
+}
+.nfsbird .rd-help-drawer-half-width {
+        width: -webkit-calc(50% - 0.625rem);
+        width: -moz-calc(50% - 0.625rem);
+        width: calc(50% - 0.625rem);
+    }
+.nfsbird .rd-primary-nav-item:last-child .rd-nav-advert {
+  margin-bottom: 0px;
+}
+.nfsbird .rd-header-top {
+  top: 0px;
+}
+/* Header movement on scroll */
+.nfsbird .rd-header-top.rd-scroll-change-header {
+            top: -webkit-calc(var(--rd-headerHeight) * -1);
+            top: -moz-calc(var(--rd-headerHeight) * -1);
+            top: calc(var(--rd-headerHeight) * -1);
+        }
+.nfsbird .rd-search-suggestions {
+  -webkit-transform-origin: top;
+     -moz-transform-origin: top;
+      -ms-transform-origin: top;
+          transform-origin: top;
+  --tw-scale-y: 0;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+     -moz-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 300ms;
+     -moz-transition-duration: 300ms;
+          transition-duration: 300ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     -moz-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nfsbird .rd-search-suggestions.rd-search-suggestions-open {
+  --tw-scale-y: 1;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+     -moz-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 1;
+}
+/* Secondary Nav */
+.nfsbird .rd-secnav-position {
+  left: 0px;
+  right: 0px;
+        top: 4.125rem;
+        top: var(--rd-headerHeight);
+}
+/* Header movement on scroll */
+.nfsbird .rd-secnav-position.rd-scroll-change-secnav {
+            top: 0;
+        }
+/* Drawers */
+.nfsbird .rd-drawer {
+  -webkit-transform-origin: top;
+     -moz-transform-origin: top;
+      -ms-transform-origin: top;
+          transform-origin: top;
+  --tw-scale-y: 0;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+     -moz-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 300ms;
+     -moz-transition-duration: 300ms;
+          transition-duration: 300ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     -moz-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nfsbird .rd-drawer.rd-drawer-invert {
+  -webkit-transform-origin: bottom;
+     -moz-transform-origin: bottom;
+      -ms-transform-origin: bottom;
+          transform-origin: bottom;
+}
+.nfsbird .rd-drawer.rd-drawer-flow-no-transition {
+            -webkit-transition-property: max-height, -webkit-transform;
+            transition-property: max-height, -webkit-transform;
+            -moz-transition-property: max-height, transform, -moz-transform;
+            transition-property: max-height, transform;
+            transition-property: max-height, transform, -webkit-transform, -moz-transform;
+        }
+.nfsbird .rd-drawer.rd-drawer-open {
+  --tw-scale-y: 1;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+     -moz-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 1;
+}
+.nfsbird .rd-drawer.rd-drawer-open.rd-drawer-flow {
+                max-height: 100rem;
+            }
+.nfsbird .rd-drawer.rd-drawer-open.rd-drawer-flow.rd-drawer-flow-no-transition {
+  height: auto;
+}
+/* Bottom nav quick links drawer */
+.nfsbird .rd-bottomnav-qld-clip {
+        -webkit-clip-path: polygon(0% -15%, 100% -15%, 100% 100%, 0% 100%);
+                clip-path: polygon(0% -15%, 100% -15%, 100% 100%, 0% 100%);
+    }
+.nfsbird .rd-bottomnav-bottom {
+  bottom: 0px;
+}
+/* Bottom nav movement on scroll */
+.nfsbird .rd-bottomnav-bottom.rd-scroll-change-bottomnav {
+            bottom: -webkit-calc(var(--rd-bottomNavHeight) * -1);
+            bottom: -moz-calc(var(--rd-bottomNavHeight) * -1);
+            bottom: calc(var(--rd-bottomNavHeight) * -1);
+        }
+/* Splide Slider */
+.nfsbird .rd-slider-track-wrapper {
+  margin-top: 1.875rem;
+}
+@media (min-width: 768px) {
+
+  .nfsbird .rd-slider-track-wrapper {
+    margin-top: 1.25rem;
+  }
+}
+.nfsbird .splide__track {
+  margin-top: -1.875rem;
+  margin-bottom: 3.375rem;
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+}
+@media (min-width: 768px) {
+
+  .nfsbird .splide__track {
+    margin-top: -1.25rem;
+    margin-bottom: 2.375rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+}
+.nfsbird .rd-slider-controls {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  --tw-translate-x: -50%;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+     -moz-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+@media (min-width: 768px) {
+
+  .nfsbird .rd-slider-controls {
+    position: static;
+    -webkit-transform: none;
+       -moz-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+}
+.nfsbird .splide-wide .rd-slider-controls {
+  position: static;
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: none;
+     -moz-transform: none;
+      -ms-transform: none;
+          transform: none;
+}
+.nfsbird .rd-slider-controls.nfs-wide {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  --tw-translate-x: -50%;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+     -moz-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+@media (min-width: 768px) {
+
+  .nfsbird .rd-slider-controls.nfs-wide {
+    position: static;
+    -webkit-transform: none;
+       -moz-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+}
+.nfsbird .splide__arrow {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  z-index: 20;
+  display: none;
+  min-width: 4rem;
+  color: rgba(216, 216, 216, 1);
+}
+.nfsbird .splide__arrow:hover {
+  color: rgba(0, 177, 242, 1);
+}
+@media (min-width: 768px) {
+
+  .nfsbird .splide__arrow {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+            justify-content: center;
+  }
+}
+@media (min-width: 1200px) {
+
+  .nfsbird .splide__arrow {
+    min-width: 10%;
+  }
+}
+@media (min-width: 768px) {
+
+  .nfsbird .splide__arrow.splide__arrow--prev {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+       -moz-box-align: start;
+            align-items: flex-start;
+    padding: 1.25rem;
+  }
+}
+.nfsbird .splide__arrow.splide__arrow--prev {
+            left: -80px;
+        }
+@media (min-width: 768px) {
+
+  .nfsbird .splide__arrow.splide__arrow--next {
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+       -moz-box-align: end;
+            align-items: flex-end;
+    padding: 1.25rem;
+  }
+}
+.nfsbird .splide__arrow.splide__arrow--next {
+            right: -80px;
+        }
+.nfsbird .splide__arrow > .rd-slider-arrow-shadow {
+  --tw-drop-shadow: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.6));
+  -webkit-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+          filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.nfsbird .splide__pagination {
+  bottom: -1.125rem;
+  z-index: 20;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+          justify-content: center;
+}
+@media (min-width: 768px) {
+
+  .nfsbird .splide__pagination {
+    position: absolute;
+    left: 50%;
+    --tw-translate-x: -50%;
+    -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+       -moz-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+        -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+}
+.nfsbird .splide-wide .splide__arrow {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  z-index: 20;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  min-width: 4rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+          justify-content: center;
+  color: rgba(216, 216, 216, 1);
+}
+.nfsbird .splide-wide .splide__arrow:hover {
+  color: rgba(0, 177, 242, 1);
+}
+@media (min-width: 1200px) {
+
+  .nfsbird .splide-wide .splide__arrow {
+    min-width: 10%;
+  }
+}
+.nfsbird .splide-wide .splide__arrow.splide__arrow--prev {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+          align-items: flex-start;
+  padding: 0.875rem;
+}
+@media (min-width: 1024px) {
+
+  .nfsbird .splide-wide .splide__arrow.splide__arrow--prev {
+    padding: 1.25rem;
+  }
+}
+.nfsbird .splide-wide .splide__arrow.splide__arrow--next {
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+     -moz-box-align: end;
+          align-items: flex-end;
+  padding: 0.875rem;
+}
+@media (min-width: 1024px) {
+
+  .nfsbird .splide-wide .splide__arrow.splide__arrow--next {
+    padding: 1.25rem;
+  }
+}
+.nfsbird .splide-wide .splide__arrow > .rd-slider-arrow-shadow {
+  --tw-drop-shadow: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.6));
+  -webkit-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+          filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.nfsbird .splide-wide .splide__pagination {
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  z-index: 20;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  width: 100%;
+  --tw-translate-x: -50%;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+     -moz-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+          justify-content: center;
+}
+.nfsbird .splide__pagination__page {
+  margin: 0.3125rem;
+  display: block;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+  border-width: 1px;
+  border-color: rgba(213, 213, 234, 1);
+}
+.nfsbird .splide__pagination__page.is-active {
+  border-color: rgba(0, 177, 242, 1);
+  background-color: rgba(0, 177, 242, 1);
+}
+.nfsbird .rd-slider-pagination-shadow .splide__pagination__page {
+  --tw-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
+  --tw-shadow-colored: 0px 0px 10px 0px var(--tw-shadow-color);
+  -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+          box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+/* Slider utilities */
+/* Allow slides on the right to be visible on mobile */
+/* .rd-slider-overflow-mobile { @apply rd-pr-0 sm:rd-pr-20; } */
+/* Hero slider */
+.nfsbird .rd-hero-slider .splide__track {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.nfsbird .rd-hero-slider .rd-slider-controls {
+  position: static;
+  -webkit-transform: none;
+     -moz-transform: none;
+      -ms-transform: none;
+          transform: none;
+}
+@media (min-width: 768px) {
+
+  .nfsbird .rd-hero-slider .splide__arrow {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+
+  .nfsbird .rd-hero-slider .splide__arrow {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+  }
+}
+@media (min-width: 1200px) {
+
+  .nfsbird .rd-hero-slider .splide__arrow {
+    min-width: 4rem;
+  }
+}
+.nfsbird .rd-hero-slider .splide__arrow.splide__arrow--prev {
+  left: 0px;
+}
+.nfsbird .rd-hero-slider .splide__arrow.splide__arrow--next {
+  right: 0px;
+}
+.nfsbird .rd-hero-slider .splide__pagination {
+  position: absolute;
+  left: 50%;
+  bottom: 16.666667%;
+  z-index: 20;
+  --tw-translate-x: -50%;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+     -moz-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+@media (min-width: 1024px) {
+
+  .nfsbird .rd-hero-slider .splide__pagination {
+    bottom: 8rem;
+  }
+}
+@media (min-width: 1200px) {
+
+  .nfsbird .rd-hero-slider .splide__pagination {
+    bottom: auto;
+    top: 68%;
+  }
+}
+@media (min-width: 1536px) {
+
+  .nfsbird .rd-hero-slider .splide__pagination {
+    top: 75%;
+  }
+}
+/* Layout adjustments */
+.nfsbird .rd-hero-slider .rd-p-hero-content-wrapper {
+  padding-bottom: 5.75rem;
+}
+@media (min-width: 540px) {
+
+  .nfsbird .rd-hero-slider .rd-p-hero-content-wrapper {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+
+  .nfsbird .rd-hero-slider .rd-p-hero-content-wrapper {
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+
+  .nfsbird .rd-hero-slider .rd-p-hero-content-wrapper {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+.nfsbird .rd-hero-slider .rd-p-hero-content-wrapper {
+            padding-top: 7.25rem;
+            padding-top: -webkit-calc(var(--rd-headerHeight) + var(--rd-secNavHeight));
+            padding-top: -moz-calc(var(--rd-headerHeight) + var(--rd-secNavHeight));
+            padding-top: calc(var(--rd-headerHeight) + var(--rd-secNavHeight));
+        }
+.nfsbird .rd-hero-slider .rd-top-hero-content {
+            top: 7.5%;
+        }
+/* Flip card slider */
+.nfsbird .rd-flipcards-slider .splide__arrow {
+  color: rgba(0, 177, 242, 1);
+}
+.nfsbird .rd-flipcards-slider .splide__arrow:disabled {
+  color: rgba(216, 216, 216, 1);
+}
+@media (min-width: 1200px) {
+
+  .nfsbird .rd-flipcards-slider .splide__arrow {
+    min-width: 5rem;
+  }
+}
+.nfsbird .rd-flipcards-slider .rd-slider-controls {
+  top: 100%;
+  bottom: auto;
+}
+/* Flip cards */
+@media screen and (max-width:589px) {
+        .nfsbird #nfsbird-products-slider .splide__slide{
+            width: 70vw !important;
+        }
+    }
+.nfsbird .rd-flipcard-scene {
+        /* perspective: 1600px; */
+    }
+.nfsbird .rd-flipcard-object {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+        -webkit-transform-style: preserve-3d;
+           -moz-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
+           -moz-backface-visibility: hidden;
+                backface-visibility: hidden;
+        -webkit-transition: -webkit-transform 600ms;
+        transition: -webkit-transform 600ms;
+        -moz-transition: transform 600ms, -moz-transform 600ms;
+        transition: transform 600ms;
+        transition: transform 600ms, -webkit-transform 600ms, -moz-transform 600ms;
+        /* Prevent card from getting highlighted upon tapping on iPhones */
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.nfsbird .rd-flipcard-object.rd-flipped {
+            -webkit-transform: rotateY(180deg);
+               -moz-transform: rotateY(180deg);
+                    transform: rotateY(180deg);
+            -webkit-backface-visibility: visible;
+               -moz-backface-visibility: visible;
+                    backface-visibility: visible;
+        }
+.nfsbird .rd-flipcard-face {
+        width: 100%;
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+           -moz-box-flex: 0;
+                flex: 0 0 auto;
+        -webkit-backface-visibility: hidden;
+           -moz-backface-visibility: hidden;
+                backface-visibility: hidden;
+    }
+.nfsbird .rd-flipcard-face.rd-flipcard-back {
+            -webkit-transform: rotateY(180deg);
+               -moz-transform: rotateY(180deg);
+                    transform: rotateY(180deg);
+            margin-left: -100%;
+        }
+/* &.flipped.rd-flipcard-object{
+        backface-visibility: unset;
+    } */
+/* Apply Form (Interested Section) */
+.nfsbird .rd-form input:not(:-moz-placeholder-shown) ~ label, .nfsbird .rd-form textarea:not(:-moz-placeholder-shown) ~ label {
+            /* @apply transform; scale-75; -translate-y-6; */
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            -moz-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+                 transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+            --tw-scale-x: 0.6;
+            --tw-scale-y: 0.6;
+            --tw-translate-y: -1.5rem;
+        }
+.nfsbird .rd-form input:not(:-ms-input-placeholder) ~ label, .nfsbird .rd-form textarea:not(:-ms-input-placeholder) ~ label {
+            /* @apply transform; scale-75; -translate-y-6; */
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            -ms-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+                transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+            --tw-scale-x: 0.6;
+            --tw-scale-y: 0.6;
+            --tw-translate-y: -1.5rem;
+        }
+.nfsbird .rd-form input:focus ~ label,
+        .nfsbird .rd-form input:not(:placeholder-shown) ~ label,
+        .nfsbird .rd-form select:focus ~ label,
+        .nfsbird .rd-form select:not([value='']) ~ label,
+        .nfsbird .rd-form textarea:focus ~ label,
+        .nfsbird .rd-form textarea:not(:placeholder-shown) ~ label {
+            /* @apply transform; scale-75; -translate-y-6; */
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            -webkit-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+               -moz-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+                -ms-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+                    transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+            --tw-scale-x: 0.6;
+            --tw-scale-y: 0.6;
+            --tw-translate-y: -1.5rem;
+        }
+.nfsbird .rd-form input:focus ~ label,
+        .nfsbird .rd-form select:focus ~ label {
+            /* @apply text-black; left-0; */
+            --tw-text-opacity: 1;
+            color: rgba(0, 0, 0, var(--tw-text-opacity));
+            left: 0;
+        }
+.nfsbird .rd-kc-slider .splide__track {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0.9375rem;
+  padding-bottom: 1.875rem;
+}
+@media (min-width: 768px) {
+
+  .nfsbird .rd-kc-slider .splide__track {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0.9375rem;
+    padding-bottom: 1.875rem;
+  }
+}
+@media (min-width: 1024px) {
+
+  .nfsbird .rd-kc-slider .splide__track {
+    padding-bottom: 1.25rem;
+  }
+}
+.nfsbird .rd-kc-slider .rd-slider-controls.rd-slider-control-gradient .splide__arrow {
+            top: 0.9375rem;
+            height: -webkit-calc(100% - 0.9375rem - 1.25rem - 1.125rem);
+            height: -moz-calc(100% - 0.9375rem - 1.25rem - 1.125rem);
+            height: calc(100% - 0.9375rem - 1.25rem - 1.125rem);
+        }
+.nfsbird .rd-kc-slider .rd-slider-controls.rd-slider-control-gradient .splide__arrow.splide__arrow--prev {
+  border-top-right-radius: 1.125rem;
+  border-bottom-right-radius: 1.125rem;
+}
+.nfsbird .rd-kc-slider .rd-slider-controls.rd-slider-control-gradient .splide__arrow.splide__arrow--next {
+  border-top-left-radius: 1.125rem;
+  border-bottom-left-radius: 1.125rem;
+}
+@media (min-width: 768px) {
+
+  .nfsbird .rd-kc-slider .splide__pagination {
+    position: static;
+    --tw-translate-x: 0px;
+    -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+       -moz-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+        -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+}
+.nfsbird .rd-kc-slider .splide__pagination__page {
+  border-color: rgba(255, 255, 255, 1);
+}
+.nfsbird .rd-kc-slider .splide__pagination__page.is-active {
+  border-color: rgba(0, 177, 242, 1);
+  background-color: rgba(0, 177, 242, 1);
+}
+/* Animated halo - Flipcard Section */
+.nfsbird .rd-animated-bg-halo-flipcard {
+  pointer-events: none;
+  position: absolute;
+  z-index: -20;
+        --translate-x-0pc: 0vw;
+        --translate-y-0pc: 0vw;
+        --translate-x-50pc: 80vw;
+        --translate-y-50pc: 0vw;
+        --translate-x-100pc: 10vw;
+        --translate-y-100pc: 20vw;
+
+
+        width: 50vw;
+        height: 50vw;
+        background: rgb(58 192 255 / 88%);
+        border-radius: 50%;
+        right: 0;
+        left: 0;
+        -webkit-filter: blur(30px);
+                filter: blur(30px);
+        opacity: .7;
+        -webkit-transition: background .3s, width 1s, top 2s;
+        -moz-transition: background .3s, width 1s, top 2s;
+        transition: background .3s, width 1s, top 2s;
+        /* transition-delay: .5s; */
+        /* background: radial-gradient(
+            60vw 60vw at 50% 50%,
+            rgba(58, 192, 255, 0.30) 0%,
+            rgba(218, 232, 241, 0.69) 41.56%,
+            rgba(250, 251, 251, 0.00) 100%
+        ); */
+        /* background: radial-gradient(30vw 30vw at 50% 50%,
+        rgb(58 192 255 / 75%) 0%,
+        rgb(58 192 255 / 43%) 33%,
+        rgba(250, 251, 251, 0.00) 100%); */
+        -webkit-animation: halo 12s infinite alternate forwards running;
+           -moz-animation: halo 12s infinite alternate forwards running;
+                animation: halo 12s infinite alternate forwards running;
+        /* @media screen(lg) {
+            filter: blur(80px);
+        } */
+}
+@media (min-width: 768px) {
+    .nfsbird .rd-animated-bg-halo-flipcard {
+            opacity: .9;
+            --translate-x-0pc: 0vw;
+            --translate-y-0pc: 0vw;
+            --translate-x-50pc: 80vw;
+            --translate-y-50pc: 0vw;
+            --translate-x-100pc: 10vw;
+            --translate-y-100pc: 20vw;
+            background: rgb(58 192 255 / 75%);
+            width: 30vw;
+            height: 30vw;
+            -webkit-filter: blur(40px);
+                    filter: blur(40px)
+            /* width: 80vw;
+            height: 80vw;
+            top: -10vw;
+            right: -10vw; */
+            /* background: radial-gradient(
+                30vw 30vw at 50% 50%,
+                rgba(58, 192, 255, 0.30) 0%,
+                rgba(218, 232, 241, 0.69) 41.56%,
+                rgba(250, 251, 251, 0.00) 100%
+            ); */
+            /* background: radial-gradient(30vw 30vw at 50% 50%,
+            rgb(58 192 255 / 75%) 0%,
+            rgb(58 192 255 / 50%) 42%,
+            rgba(250, 251, 251, 0.00) 100%); */
+    }
+        }
+.nfsbird .rd-animated-bg-halo-flipcard.stage-2{
+        background-color: rgb(255 191 0 / 100%);
+        width: 50vw;
+        height: 50vw;
+    }
+@media (min-width: 768px) {
+    .nfsbird .rd-animated-bg-halo-flipcard.stage-2{
+            width: 30vw;
+            height: 30vw
+    }
+        }
+.nfsbird .rd-animated-bg-halo-flipcard.stage-3.stage-2.stage-4.stage-5.stage-6.stage-7,
+    .nfsbird .rd-animated-bg-halo-flipcard.stage-3.stage-2.stage-4.stage-5.stage-6,
+    .nfsbird .rd-animated-bg-halo-flipcard.stage-3.stage-2.stage-4.stage-5,
+    .nfsbird .rd-animated-bg-halo-flipcard.stage-3.stage-2.stage-4,
+    .nfsbird .rd-animated-bg-halo-flipcard.stage-3.stage-2{
+        width: 50vw;
+        height: 50vw;
+        background: rgb(58 192 255 / 88%);
+    }
+@media (min-width: 768px) {
+    .nfsbird .rd-animated-bg-halo-flipcard.stage-3.stage-2.stage-4.stage-5.stage-6.stage-7,
+    .nfsbird .rd-animated-bg-halo-flipcard.stage-3.stage-2.stage-4.stage-5.stage-6,
+    .nfsbird .rd-animated-bg-halo-flipcard.stage-3.stage-2.stage-4.stage-5,
+    .nfsbird .rd-animated-bg-halo-flipcard.stage-3.stage-2.stage-4,
+    .nfsbird .rd-animated-bg-halo-flipcard.stage-3.stage-2{
+            width: 30vw;
+            height: 30vw;
+            background: rgb(58 192 255 / 75%)
+    }
+        }
+@-webkit-keyframes halo {
+        0% {
+            -webkit-transform: translate(var(--translate-x-0pc), var(--translate-y-0pc));
+                    transform: translate(var(--translate-x-0pc), var(--translate-y-0pc));
+        }
+        50% {
+            -webkit-transform: translate(var(--translate-x-50pc), var(--translate-y-50pc));
+                    transform: translate(var(--translate-x-50pc), var(--translate-y-50pc));
+        }
+        100% {
+            -webkit-transform: translate(var(--translate-x-100pc), var(--translate-y-100pc));
+                    transform: translate(var(--translate-x-100pc), var(--translate-y-100pc));
+        }
+    }
+@-moz-keyframes halo {
+        0% {
+            -moz-transform: translate(var(--translate-x-0pc), var(--translate-y-0pc));
+                 transform: translate(var(--translate-x-0pc), var(--translate-y-0pc));
+        }
+        50% {
+            -moz-transform: translate(var(--translate-x-50pc), var(--translate-y-50pc));
+                 transform: translate(var(--translate-x-50pc), var(--translate-y-50pc));
+        }
+        100% {
+            -moz-transform: translate(var(--translate-x-100pc), var(--translate-y-100pc));
+                 transform: translate(var(--translate-x-100pc), var(--translate-y-100pc));
+        }
+    }
+@keyframes halo {
+        0% {
+            -webkit-transform: translate(var(--translate-x-0pc), var(--translate-y-0pc));
+               -moz-transform: translate(var(--translate-x-0pc), var(--translate-y-0pc));
+                    transform: translate(var(--translate-x-0pc), var(--translate-y-0pc));
+        }
+        50% {
+            -webkit-transform: translate(var(--translate-x-50pc), var(--translate-y-50pc));
+               -moz-transform: translate(var(--translate-x-50pc), var(--translate-y-50pc));
+                    transform: translate(var(--translate-x-50pc), var(--translate-y-50pc));
+        }
+        100% {
+            -webkit-transform: translate(var(--translate-x-100pc), var(--translate-y-100pc));
+               -moz-transform: translate(var(--translate-x-100pc), var(--translate-y-100pc));
+                    transform: translate(var(--translate-x-100pc), var(--translate-y-100pc));
+        }
+    }
+@media (min-width: 540px) {
+
+  .nfsbird .rd-animated-scroll-signifier {
+    left: 50%;
+    bottom: 8rem;
+    --tw-translate-x: -50%;
+    -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+       -moz-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+        -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+}
+@media (min-width: 1024px) {
+
+  .nfsbird .rd-animated-scroll-signifier {
+    bottom: 3rem;
+  }
+}
+.nfsbird .rd-animated-scroll-signifier {
+
+        --translate-x-0pc: -50%;
+        --translate-y-0pc: -200%;
+        --translate-y-33pc: -100%;
+        --translate-y-66pc: 100%;
+        --translate-y-100pc: 200%;
+
+        -webkit-animation-name: scroller-movement;
+
+           -moz-animation-name: scroller-movement;
+
+                animation-name: scroller-movement;
+        -webkit-animation-delay: 0s;
+           -moz-animation-delay: 0s;
+                animation-delay: 0s;
+        -webkit-animation-duration: 1.8s;
+           -moz-animation-duration: 1.8s;
+                animation-duration: 1.8s;
+        -webkit-animation-timing-function: linear;
+           -moz-animation-timing-function: linear;
+                animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+           -moz-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+    }
+@-webkit-keyframes scroller-movement {
+        0% {
+            -webkit-transform: translate(var(--translate-x-0pc), var(--translate-y-0pc));
+                    transform: translate(var(--translate-x-0pc), var(--translate-y-0pc));
+            opacity: 0;
+        }
+        33.333333% {
+            -webkit-transform: translate(var(--translate-x-0pc), var(--translate-y-33pc));
+                    transform: translate(var(--translate-x-0pc), var(--translate-y-33pc));
+            opacity: 1;
+        }
+        66.666667% {
+            -webkit-transform: translate(var(--translate-x-0pc), var(--translate-y-66pc));
+                    transform: translate(var(--translate-x-0pc), var(--translate-y-66pc));
+            opacity: 1;
+        }
+        100% {
+            -webkit-transform: translate(var(--translate-x-0pc), var(--translate-y-100pc));
+                    transform: translate(var(--translate-x-0pc), var(--translate-y-100pc));
+            opacity: 0;
+        }
+    }
+@-moz-keyframes scroller-movement {
+        0% {
+            -moz-transform: translate(var(--translate-x-0pc), var(--translate-y-0pc));
+                 transform: translate(var(--translate-x-0pc), var(--translate-y-0pc));
+            opacity: 0;
+        }
+        33.333333% {
+            -moz-transform: translate(var(--translate-x-0pc), var(--translate-y-33pc));
+                 transform: translate(var(--translate-x-0pc), var(--translate-y-33pc));
+            opacity: 1;
+        }
+        66.666667% {
+            -moz-transform: translate(var(--translate-x-0pc), var(--translate-y-66pc));
+                 transform: translate(var(--translate-x-0pc), var(--translate-y-66pc));
+            opacity: 1;
+        }
+        100% {
+            -moz-transform: translate(var(--translate-x-0pc), var(--translate-y-100pc));
+                 transform: translate(var(--translate-x-0pc), var(--translate-y-100pc));
+            opacity: 0;
+        }
+    }
+@keyframes scroller-movement {
+        0% {
+            -webkit-transform: translate(var(--translate-x-0pc), var(--translate-y-0pc));
+               -moz-transform: translate(var(--translate-x-0pc), var(--translate-y-0pc));
+                    transform: translate(var(--translate-x-0pc), var(--translate-y-0pc));
+            opacity: 0;
+        }
+        33.333333% {
+            -webkit-transform: translate(var(--translate-x-0pc), var(--translate-y-33pc));
+               -moz-transform: translate(var(--translate-x-0pc), var(--translate-y-33pc));
+                    transform: translate(var(--translate-x-0pc), var(--translate-y-33pc));
+            opacity: 1;
+        }
+        66.666667% {
+            -webkit-transform: translate(var(--translate-x-0pc), var(--translate-y-66pc));
+               -moz-transform: translate(var(--translate-x-0pc), var(--translate-y-66pc));
+                    transform: translate(var(--translate-x-0pc), var(--translate-y-66pc));
+            opacity: 1;
+        }
+        100% {
+            -webkit-transform: translate(var(--translate-x-0pc), var(--translate-y-100pc));
+               -moz-transform: translate(var(--translate-x-0pc), var(--translate-y-100pc));
+                    transform: translate(var(--translate-x-0pc), var(--translate-y-100pc));
+            opacity: 0;
+        }
+    }
+/* App download CTA */
+.nfsbird .rd-bg-cta-radial-gradient {
+        background: -webkit-radial-gradient(-6.52% -41.19%, 103.12% 137.5%, rgb(119, 119, 121) 0%, rgb(30, 30, 31) 18.35%, rgb(85, 85, 87) 100%);
+        background: -moz-radial-gradient(-6.52% -41.19%, 103.12% 137.5%, rgb(119, 119, 121) 0%, rgb(30, 30, 31) 18.35%, rgb(85, 85, 87) 100%);
+        background: radial-gradient(103.12% 137.5% at -6.52% -41.19%, rgb(119, 119, 121) 0%, rgb(30, 30, 31) 18.35%, rgb(85, 85, 87) 100%);
+    }
+.nfsbird .rd-apple-button-width {
+        width: 8.25rem;
+    }
+@media (min-width: 1024px) {
+    .nfsbird .rd-apple-button-width {
+            width: 7.125rem
+    }
+        }
+@media (min-width: 1536px) {
+    .nfsbird .rd-apple-button-width {
+            width: 10rem
+    }
+        }
+.nfsbird .rd-google-button-width {
+        width: 9.25rem;
+    }
+@media (min-width: 1024px) {
+    .nfsbird .rd-google-button-width {
+            width: 8rem
+    }
+        }
+@media (min-width: 1536px) {
+    .nfsbird .rd-google-button-width {
+            width: 11.25rem
+    }
+        }
+/* Footer */
+.nfsbird .rd-mb-footer {
+        margin-bottom: 60px;
+        margin-bottom: var(--rd-bottomNavHeight);
+    }
+.nfsbird .rd-footer-column:last-child .rd-footer-section:last-child {
+  margin-bottom: 0px;
+  border-style: none;
+}
+/* Page-end gradient */
+.nfsbird .rd-page-end-gradient {
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.00)), color-stop(37.5%, #C1ECFB), color-stop(62.5%, #98DFF9), to(#5ACCF5));
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.00) 0%, #C1ECFB 37.5%, #98DFF9 62.5%, #5ACCF5 100%);
+        background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.00) 0%, #C1ECFB 37.5%, #98DFF9 62.5%, #5ACCF5 100%);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #C1ECFB 37.5%, #98DFF9 62.5%, #5ACCF5 100%);
+    }
+/* Chatbot (Ila) */
+.nfsbird-root #chatTogglerDiv {
+  z-index: 20;
+        bottom: 3.75rem;
+        bottom: var(--rd-bottomNavHeight);
+}
+/* Product Banner */
+.nfsbird .rd-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+.nfsbird .rd-pointer-events-none {
+  pointer-events: none;
+}
+.nfsbird .rd-invisible {
+  visibility: hidden;
+}
+.nfsbird .rd-fixed {
+  position: fixed;
+}
+.nfsbird .rd-absolute {
+  position: absolute;
+}
+.nfsbird .rd-relative {
+  position: relative;
+}
+.nfsbird .rd-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+.nfsbird .-rd-right-20 {
+  right: -5rem;
+}
+.nfsbird .rd-bottom-0 {
+  bottom: 0px;
+}
+.nfsbird .rd-bottom-15 {
+  bottom: 3.75rem;
+}
+.nfsbird .rd-bottom-2 {
+  bottom: 0.5rem;
+}
+.nfsbird .rd-bottom-2\.5 {
+  bottom: 0.625rem;
+}
+.nfsbird .rd-bottom-3 {
+  bottom: 0.75rem;
+}
+.nfsbird .rd-bottom-3\.5 {
+  bottom: 0.875rem;
+}
+.nfsbird .rd-bottom-5 {
+  bottom: 1.25rem;
+}
+.nfsbird .rd-left-0 {
+  left: 0px;
+}
+.nfsbird .rd-left-1\/2 {
+  left: 50%;
+}
+.nfsbird .rd-left-2 {
+  left: 0.5rem;
+}
+.nfsbird .rd-left-auto {
+  left: auto;
+}
+.nfsbird .rd-left-end-34\.5 {
+  left: -webkit-calc(100% - 8.625rem);
+  left: -moz-calc(100% - 8.625rem);
+  left: calc(100% - 8.625rem);
+}
+.nfsbird .rd-right-0 {
+  right: 0px;
+}
+.nfsbird .rd-right-2 {
+  right: 0.5rem;
+}
+.nfsbird .rd-right-2\.5 {
+  right: 0.625rem;
+}
+.nfsbird .rd-right-22\.5 {
+  right: 5.625rem;
+}
+.nfsbird .rd-right-3 {
+  right: 0.75rem;
+}
+.nfsbird .rd-right-3\.5 {
+  right: 0.875rem;
+}
+.nfsbird .rd-right-5 {
+  right: 1.25rem;
+}
+.nfsbird .rd-top-0 {
+  top: 0px;
+}
+.nfsbird .rd-top-1\/2 {
+  top: 50%;
+}
+.nfsbird .rd-top-10 {
+  top: 2.5rem;
+}
+.nfsbird .rd-top-10\.5 {
+  top: 2.625rem;
+}
+.nfsbird .rd-top-2 {
+  top: 0.5rem;
+}
+.nfsbird .rd-top-5 {
+  top: 1.25rem;
+}
+.nfsbird .rd-top-5\/6 {
+  top: 83.333333%;
+}
+.nfsbird .rd-top-auto {
+  top: auto;
+}
+.nfsbird .rd-top-full {
+  top: 100%;
+}
+.nfsbird .rd-top-hanging-drawer-2\.5 {
+  top: -webkit-calc(100% + 0.625rem);
+  top: -moz-calc(100% + 0.625rem);
+  top: calc(100% + 0.625rem);
+}
+.nfsbird .-rd-z-1 {
+  z-index: -1;
+}
+.nfsbird .rd-z-0 {
+  z-index: 0;
+}
+.nfsbird .rd-z-20 {
+  z-index: 20;
+}
+.nfsbird .rd-z-25 {
+  z-index: 25;
+}
+.nfsbird .rd-z-50 {
+  z-index: 50;
+}
+.nfsbird .rd-z-51 {
+  z-index: 51;
+}
+.nfsbird .rd-z-\[1\] {
+  z-index: 1;
+}
+.nfsbird .rd--z-1 {
+  z-index: -1;
+}
+.nfsbird .rd-order-1 {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+     -moz-box-ordinal-group: 2;
+          order: 1;
+}
+.nfsbird .rd-order-2 {
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+     -moz-box-ordinal-group: 3;
+          order: 2;
+}
+.nfsbird .rd-col-span-1 {
+  grid-column: span 1 / span 1;
+}
+.nfsbird .rd-col-span-2 {
+  grid-column: span 2 / span 2;
+}
+.nfsbird .rd-col-start-2 {
+  grid-column-start: 2;
+}
+.nfsbird .rd-col-end-2 {
+  grid-column-end: 2;
+}
+.nfsbird .rd-row-span-1 {
+  grid-row: span 1 / span 1;
+}
+.nfsbird .rd-row-span-2 {
+  grid-row: span 2 / span 2;
+}
+.nfsbird .rd-row-span-3 {
+  grid-row: span 3 / span 3;
+}
+.nfsbird .rd-row-start-2 {
+  grid-row-start: 2;
+}
+.nfsbird .rd-m-0 {
+  margin: 0px;
+}
+.nfsbird .rd-m-5 {
+  margin: 1.25rem;
+}
+.nfsbird .rd-mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.nfsbird .rd-my-20 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.nfsbird .rd-my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.nfsbird .-rd-mb-10 {
+  margin-bottom: -2.5rem;
+}
+.nfsbird .-rd-mr-5 {
+  margin-right: -1.25rem;
+}
+.nfsbird .-rd-mt-5 {
+  margin-top: -1.25rem;
+}
+.nfsbird .rd-mb-0 {
+  margin-bottom: 0px;
+}
+.nfsbird .rd-mb-0\.5 {
+  margin-bottom: 0.125rem;
+}
+.nfsbird .rd-mb-1 {
+  margin-bottom: 0.25rem;
+}
+.nfsbird .rd-mb-1\.25 {
+  margin-bottom: 0.3125rem;
+}
+.nfsbird .rd-mb-10 {
+  margin-bottom: 2.5rem;
+}
+.nfsbird .rd-mb-15 {
+  margin-bottom: 3.75rem;
+}
+.nfsbird .rd-mb-2 {
+  margin-bottom: 0.5rem;
+}
+.nfsbird .rd-mb-2\.5 {
+  margin-bottom: 0.625rem;
+}
+.nfsbird .rd-mb-3 {
+  margin-bottom: 0.75rem;
+}
+.nfsbird .rd-mb-3\.5 {
+  margin-bottom: 0.875rem;
+}
+.nfsbird .rd-mb-4 {
+  margin-bottom: 1rem;
+}
+.nfsbird .rd-mb-4\.5 {
+  margin-bottom: 1.125rem;
+}
+.nfsbird .rd-mb-5 {
+  margin-bottom: 1.25rem;
+}
+.nfsbird .rd-mb-7 {
+  margin-bottom: 1.75rem;
+}
+.nfsbird .rd-mb-7\.5 {
+  margin-bottom: 1.875rem;
+}
+.nfsbird .rd-mr-0 {
+  margin-right: 0px;
+}
+.nfsbird .rd-mr-0\.5 {
+  margin-right: 0.125rem;
+}
+.nfsbird .rd-mr-1 {
+  margin-right: 0.25rem;
+}
+.nfsbird .rd-mr-2 {
+  margin-right: 0.5rem;
+}
+.nfsbird .rd-mr-2\.5 {
+  margin-right: 0.625rem;
+}
+.nfsbird .rd-mr-4 {
+  margin-right: 1rem;
+}
+.nfsbird .rd-mr-5 {
+  margin-right: 1.25rem;
+}
+.nfsbird .rd-mt-0 {
+  margin-top: 0px;
+}
+.nfsbird .rd-mt-17\.5 {
+  margin-top: 4.375rem;
+}
+.nfsbird .rd-mt-2 {
+  margin-top: 0.5rem;
+}
+.nfsbird .rd-mt-2\.5 {
+  margin-top: 0.625rem;
+}
+.nfsbird .rd-mt-5 {
+  margin-top: 1.25rem;
+}
+.nfsbird .rd-mt-\[66px\] {
+  margin-top: 66px;
+}
+.nfsbird .rd-box-border {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.nfsbird .rd-block {
+  display: block;
+}
+.nfsbird .rd-inline-block {
+  display: inline-block;
+}
+.nfsbird .rd-inline {
+  display: inline;
+}
+.nfsbird .rd-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+}
+.nfsbird .rd-inline-flex {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-box;
+  display: inline-flex;
+}
+.nfsbird .rd-grid {
+  display: grid;
+}
+.nfsbird .rd-hidden {
+  display: none;
+}
+.nfsbird .rd-h-0 {
+  height: 0px;
+}
+.nfsbird .rd-h-1 {
+  height: 0.25rem;
+}
+.nfsbird .rd-h-10 {
+  height: 2.5rem;
+}
+.nfsbird .rd-h-12 {
+  height: 3rem;
+}
+.nfsbird .rd-h-12\.5 {
+  height: 3.125rem;
+}
+.nfsbird .rd-h-16 {
+  height: 4rem;
+}
+.nfsbird .rd-h-16\.5 {
+  height: 4.125rem;
+}
+.nfsbird .rd-h-4 {
+  height: 1rem;
+}
+.nfsbird .rd-h-6 {
+  height: 1.5rem;
+}
+.nfsbird .rd-h-7 {
+  height: 1.75rem;
+}
+.nfsbird .rd-h-7\.5 {
+  height: 1.875rem;
+}
+.nfsbird .rd-h-8 {
+  height: 2rem;
+}
+.nfsbird .rd-h-9 {
+  height: 2.25rem;
+}
+.nfsbird .rd-h-\[500px\] {
+  height: 500px;
+}
+.nfsbird .rd-h-auto {
+  height: auto;
+}
+.nfsbird .rd-h-full {
+  height: 100%;
+}
+.nfsbird .rd-max-h-0 {
+  max-height: 0px;
+}
+.nfsbird .rd-max-h-\[100svh\] {
+  max-height: 100svh;
+}
+.nfsbird .rd-w-10 {
+  width: 2.5rem;
+}
+.nfsbird .rd-w-12 {
+  width: 3rem;
+}
+.nfsbird .rd-w-12\.5 {
+  width: 3.125rem;
+}
+.nfsbird .rd-w-20 {
+  width: 5rem;
+}
+.nfsbird .rd-w-3\/5 {
+  width: 60%;
+}
+.nfsbird .rd-w-40 {
+  width: 10rem;
+}
+.nfsbird .rd-w-5\/6 {
+  width: 83.333333%;
+}
+.nfsbird .rd-w-6 {
+  width: 1.5rem;
+}
+.nfsbird .rd-w-7 {
+  width: 1.75rem;
+}
+.nfsbird .rd-w-7\.5 {
+  width: 1.875rem;
+}
+.nfsbird .rd-w-8 {
+  width: 2rem;
+}
+.nfsbird .rd-w-\[47px\] {
+  width: 47px;
+}
+.nfsbird .rd-w-auto {
+  width: auto;
+}
+.nfsbird .rd-w-full {
+  width: 100%;
+}
+.nfsbird .rd-min-w-44\.5 {
+  min-width: 11.125rem;
+}
+.nfsbird .rd-max-w-xxs {
+  max-width: 10rem;
+}
+.nfsbird .rd-flex-1 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 0%;
+     -moz-box-flex: 1;
+          flex: 1 1 0%;
+}
+.nfsbird .rd-flex-none {
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+     -moz-box-flex: 0;
+          flex: none;
+}
+.nfsbird .rd-grow {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+     -moz-box-flex: 1;
+          flex-grow: 1;
+}
+.nfsbird .rd-origin-0 {
+  -webkit-transform-origin: 0;
+     -moz-transform-origin: 0;
+      -ms-transform-origin: 0;
+          transform-origin: 0;
+}
+.nfsbird .rd-origin-left {
+  -webkit-transform-origin: left;
+     -moz-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
+}
+.nfsbird .-rd-translate-x-1\/2 {
+  --tw-translate-x: -50%;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+     -moz-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.nfsbird .-rd-translate-y-1\/2 {
+  --tw-translate-y: -50%;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+     -moz-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.nfsbird .rd--translate-x-2\/4 {
+  --tw-translate-x: -50%;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+     -moz-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.nfsbird .rd--translate-y-2\/4 {
+  --tw-translate-y: -50%;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+     -moz-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.nfsbird .rd-rotate-180 {
+  --tw-rotate: 180deg;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+     -moz-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.nfsbird .rd-rotate-45 {
+  --tw-rotate: 45deg;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+     -moz-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.nfsbird .rd-scale-0 {
+  --tw-scale-x: 0;
+  --tw-scale-y: 0;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+     -moz-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.nfsbird .rd-scale-100 {
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+     -moz-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.nfsbird .rd-scale-110 {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+     -moz-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.nfsbird .rd-scale-\[40\%\] {
+  --tw-scale-x: 40%;
+  --tw-scale-y: 40%;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+     -moz-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.nfsbird .rd-scale-\[60\%\] {
+  --tw-scale-x: 60%;
+  --tw-scale-y: 60%;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+     -moz-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.nfsbird .rd-scale-\[80\%\] {
+  --tw-scale-x: 80%;
+  --tw-scale-y: 80%;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+     -moz-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.nfsbird .rd-scale-x-\[0\.03\] {
+  --tw-scale-x: 0.03;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+     -moz-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+@-webkit-keyframes rd-pulse {
+
+  50% {
+    opacity: .5;
+  }
+}
+@-moz-keyframes rd-pulse {
+
+  50% {
+    opacity: .5;
+  }
+}
+@keyframes rd-pulse {
+
+  50% {
+    opacity: .5;
+  }
+}
+.nfsbird .rd-animate-pulse {
+  -webkit-animation: rd-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+     -moz-animation: rd-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+          animation: rd-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+.nfsbird .rd-cursor-pointer {
+  cursor: pointer;
+}
+.nfsbird .rd-list-disc {
+  list-style-type: disc;
+}
+.nfsbird .rd-appearance-none {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.nfsbird .rd-grid-flow-row {
+  grid-auto-flow: row;
+}
+.nfsbird .rd-auto-rows-auto {
+  grid-auto-rows: auto;
+}
+.nfsbird .rd-grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.nfsbird .rd-grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.nfsbird .rd-grid-cols-card {
+  grid-template-columns: 20px minmax(20px, 1fr);
+}
+.nfsbird .rd-grid-rows-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+.nfsbird .rd-flex-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+          flex-direction: column;
+}
+.nfsbird .rd-flex-wrap {
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.nfsbird .rd-items-end {
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+     -moz-box-align: end;
+          align-items: flex-end;
+}
+.nfsbird .rd-items-center {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+          align-items: center;
+}
+.nfsbird .rd-justify-start {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+          justify-content: flex-start;
+}
+.nfsbird .rd-justify-center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+          justify-content: center;
+}
+.nfsbird .rd-justify-between {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+          justify-content: space-between;
+}
+.nfsbird .rd-justify-around {
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+}
+.nfsbird .rd-gap-1 {
+  gap: 0.25rem;
+}
+.nfsbird .rd-gap-2 {
+  gap: 0.5rem;
+}
+.nfsbird .rd-gap-5 {
+  gap: 1.25rem;
+}
+.nfsbird .rd-gap-x-5 {
+  -webkit-column-gap: 1.25rem;
+     -moz-column-gap: 1.25rem;
+          column-gap: 1.25rem;
+}
+.nfsbird .rd-gap-x-6 {
+  -webkit-column-gap: 1.5rem;
+     -moz-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+}
+.nfsbird .rd-gap-y-3 {
+  row-gap: 0.75rem;
+}
+.nfsbird .rd-gap-y-8 {
+  row-gap: 2rem;
+}
+.nfsbird .rd-self-start {
+  -webkit-align-self: flex-start;
+          align-self: flex-start;
+}
+.nfsbird .rd-self-end {
+  -webkit-align-self: flex-end;
+          align-self: flex-end;
+}
+.nfsbird .rd-overflow-auto {
+  overflow: auto;
+}
+.nfsbird .rd-overflow-hidden {
+  overflow: hidden;
+}
+.nfsbird .rd-overflow-x-auto {
+  overflow-x: auto;
+}
+.nfsbird .rd-rounded {
+  border-radius: 1.25rem;
+}
+.nfsbird .rd-rounded-full {
+  border-radius: 50%;
+}
+.nfsbird .rd-rounded-large {
+  border-radius: 3.125rem;
+}
+.nfsbird .rd-rounded-medium {
+  border-radius: 0.75rem;
+}
+.nfsbird .rd-rounded-semi {
+  border-radius: 1rem;
+}
+.nfsbird .rd-rounded-semi-circle {
+  border-radius: 2.5rem;
+}
+.nfsbird .rd-rounded-slightly-less {
+  border-radius: 1.125rem;
+}
+.nfsbird .rd-rounded-small {
+  border-radius: 0.5rem;
+}
+.nfsbird .rd-rounded-subtle {
+  border-radius: 0.625rem;
+}
+.nfsbird .rd-rounded-t-slightly-less {
+  border-top-left-radius: 1.125rem;
+  border-top-right-radius: 1.125rem;
+}
+.nfsbird .rd-rounded-br-small {
+  border-bottom-right-radius: 0.5rem;
+}
+.nfsbird .rd-border {
+  border-width: 1px;
+}
+.nfsbird .rd-border-0 {
+  border-width: 0px;
+}
+.nfsbird .rd-border-2 {
+  border-width: 2px;
+}
+.nfsbird .rd-border-b {
+  border-bottom-width: 1px;
+}
+.nfsbird .rd-border-b-2 {
+  border-bottom-width: 2px;
+}
+.nfsbird .rd-border-r {
+  border-right-width: 1px;
+}
+.nfsbird .rd-border-none {
+  border-style: none;
+}
+.nfsbird .rd-border-brand-black {
+  border-color: rgba(45, 45, 45, 1);
+}
+.nfsbird .rd-border-brand-blue {
+  border-color: rgba(0, 177, 242, 1);
+}
+.nfsbird .rd-border-brand-grey {
+  border-color: rgba(117, 117, 131, 1);
+}
+.nfsbird .rd-border-brand-grey\/50 {
+  border-color: rgba(117, 117, 131, 0.5);
+}
+.nfsbird .rd-border-brand-light-grey-alt {
+  border-color: rgba(216, 216, 216, 1);
+}
+.nfsbird .rd-border-brand-red {
+  border-color: #ff2c2c;
+}
+.nfsbird .rd-border-transparent {
+  border-color: transparent;
+}
+.nfsbird .rd-bg-brand-black-alt {
+  background-color: rgba(36, 36, 36, 1);
+}
+.nfsbird .rd-bg-brand-black-alt-2 {
+  background-color: rgba(51, 51, 51, 1);
+}
+.nfsbird .rd-bg-brand-blue {
+  background-color: rgba(0, 177, 242, 1);
+}
+.nfsbird .rd-bg-brand-grey {
+  background-color: rgba(117, 117, 131, 1);
+}
+.nfsbird .rd-bg-brand-grey-topnav {
+  background-color: rgba(69, 69, 69, 1);
+}
+.nfsbird .rd-bg-brand-light-blue {
+  background-color: rgba(204, 239, 252, 1);
+}
+.nfsbird .rd-bg-brand-light-blue-alt-2 {
+  background-color: rgb(218, 245, 254);
+}
+.nfsbird .rd-bg-brand-light-grey-alt {
+  background-color: rgba(216, 216, 216, 1);
+}
+.nfsbird .rd-bg-brand-lighter-blue {
+  background-color: rgba(242, 247, 253, 1);
+}
+.nfsbird .rd-bg-brand-white {
+  background-color: rgba(255, 255, 255, 1);
+}
+.nfsbird .rd-bg-brand-white-transparent-10 {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.nfsbird .rd-bg-brand-white-transparent-85 {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+.nfsbird .rd-bg-brand-white\/75 {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.nfsbird .rd-bg-transparent {
+  background-color: transparent;
+}
+.nfsbird .rd-bg-gradient-to-b {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--tw-gradient-stops)));
+  background-image: -webkit-linear-gradient(top, var(--tw-gradient-stops));
+  background-image: -moz-linear-gradient(top, var(--tw-gradient-stops));
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+.nfsbird .rd-from-brand-blue {
+  --tw-gradient-from: rgba(0, 177, 242, 1) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgba(0, 177, 242, 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.nfsbird .rd-to-brand-dark-blue\/70 {
+  --tw-gradient-to: rgb(1 41 144 / 0.7) var(--tw-gradient-to-position);
+}
+.nfsbird .rd-bg-cover {
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+.nfsbird .rd-object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.nfsbird .rd-p-0 {
+  padding: 0px;
+}
+.nfsbird .rd-p-2 {
+  padding: 0.5rem;
+}
+.nfsbird .rd-p-2\.5 {
+  padding: 0.625rem;
+}
+.nfsbird .rd-p-3 {
+  padding: 0.75rem;
+}
+.nfsbird .rd-p-3\.5 {
+  padding: 0.875rem;
+}
+.nfsbird .rd-p-4 {
+  padding: 1rem;
+}
+.nfsbird .rd-p-5 {
+  padding: 1.25rem;
+}
+.nfsbird .rd-px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.nfsbird .rd-px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+.nfsbird .rd-px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+.nfsbird .rd-px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.nfsbird .rd-px-2\.5 {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+.nfsbird .rd-px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.nfsbird .rd-px-3\.5 {
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+}
+.nfsbird .rd-px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.nfsbird .rd-px-4\.5 {
+  padding-left: 1.125rem;
+  padding-right: 1.125rem;
+}
+.nfsbird .rd-px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.nfsbird .rd-px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.nfsbird .rd-px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.nfsbird .rd-px-9 {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
+.nfsbird .rd-px-\[40px\] {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.nfsbird .rd-py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.nfsbird .rd-py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.nfsbird .rd-py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.nfsbird .rd-py-2\.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+.nfsbird .rd-py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+.nfsbird .rd-py-3\.5 {
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+}
+.nfsbird .rd-py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+.nfsbird .rd-py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+.nfsbird .rd-py-7\.5 {
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+}
+.nfsbird .rd-pb-1 {
+  padding-bottom: 0.25rem;
+}
+.nfsbird .rd-pb-2 {
+  padding-bottom: 0.5rem;
+}
+.nfsbird .rd-pb-4 {
+  padding-bottom: 1rem;
+}
+.nfsbird .rd-pb-4\.5 {
+  padding-bottom: 1.125rem;
+}
+.nfsbird .rd-pb-5 {
+  padding-bottom: 1.25rem;
+}
+.nfsbird .rd-pb-5\.5 {
+  padding-bottom: 1.375rem;
+}
+.nfsbird .rd-pl-14 {
+  padding-left: 3.5rem;
+}
+.nfsbird .rd-pl-3 {
+  padding-left: 0.75rem;
+}
+.nfsbird .rd-pl-5 {
+  padding-left: 1.25rem;
+}
+.nfsbird .rd-pr-1 {
+  padding-right: 0.25rem;
+}
+.nfsbird .rd-pr-12 {
+  padding-right: 3rem;
+}
+.nfsbird .rd-pr-2 {
+  padding-right: 0.5rem;
+}
+.nfsbird .rd-pr-2\.5 {
+  padding-right: 0.625rem;
+}
+.nfsbird .rd-pt-0 {
+  padding-top: 0px;
+}
+.nfsbird .rd-pt-0\.5 {
+  padding-top: 0.125rem;
+}
+.nfsbird .rd-pt-10 {
+  padding-top: 2.5rem;
+}
+.nfsbird .rd-pt-2 {
+  padding-top: 0.5rem;
+}
+.nfsbird .rd-pt-2\.5 {
+  padding-top: 0.625rem;
+}
+.nfsbird .rd-pt-3 {
+  padding-top: 0.75rem;
+}
+.nfsbird .rd-pt-4 {
+  padding-top: 1rem;
+}
+.nfsbird .rd-pt-5 {
+  padding-top: 1.25rem;
+}
+.nfsbird .rd-pt-5\.5 {
+  padding-top: 1.375rem;
+}
+.nfsbird .rd-pt-\[100\%\] {
+  padding-top: 100%;
+}
+.nfsbird .rd-pt-\[130\%\] {
+  padding-top: 130%;
+}
+.nfsbird .rd-pt-\[75\.5\%\] {
+  padding-top: 75.5%;
+}
+.nfsbird .rd-pt-\[82\.7\%\] {
+  padding-top: 82.7%;
+}
+.nfsbird .rd-text-left {
+  text-align: left;
+}
+.nfsbird .rd-text-center {
+  text-align: center;
+}
+.nfsbird .rd-text-base {
+  font-size: 1rem;
+}
+.nfsbird .rd-text-lg {
+  font-size: 1.125rem;
+}
+.nfsbird .rd-text-sm {
+  font-size: 0.875rem;
+}
+.nfsbird .rd-text-sm-alt {
+  font-size: 0.8125rem;
+}
+.nfsbird .rd-text-tiny {
+  font-size: 0.4375rem;
+}
+.nfsbird .rd-text-xl-alt {
+  font-size: 1.375rem;
+}
+.nfsbird .rd-text-xs {
+  font-size: 0.75rem;
+}
+.nfsbird .rd-text-xxs {
+  font-size: 0.6875rem;
+}
+.nfsbird .rd-text-xxs-alt {
+  font-size: 0.625rem;
+}
+.nfsbird .rd-uppercase {
+  text-transform: uppercase;
+}
+.nfsbird .rd-capitalize {
+  text-transform: capitalize;
+}
+.nfsbird .rd-leading-loose {
+  line-height: 1.625;
+}
+.nfsbird .rd-leading-none {
+  line-height: 1;
+}
+.nfsbird .rd-leading-normal {
+  line-height: 1.36;
+}
+.nfsbird .rd-tracking-wide {
+  letter-spacing: 0.02775em;
+}
+.nfsbird .rd-text-brand-black {
+  color: rgba(45, 45, 45, 1);
+}
+.nfsbird .rd-text-brand-blue {
+  color: rgba(0, 177, 242, 1);
+}
+.nfsbird .rd-text-brand-grey {
+  color: rgba(117, 117, 131, 1);
+}
+.nfsbird .rd-text-brand-grey-alt {
+  color: rgba(151, 151, 151, 1);
+}
+.nfsbird .rd-text-brand-light-blue-nlp {
+  --tw-text-opacity: 1;
+  color: rgb(76 200 246 / var(--tw-text-opacity));
+}
+.nfsbird .rd-text-brand-light-grey-alt {
+  color: rgba(216, 216, 216, 1);
+}
+.nfsbird .rd-text-brand-lightish-grey {
+  color: rgba(138, 138, 150, 1);
+}
+.nfsbird .rd-text-brand-red {
+  --tw-text-opacity: 1;
+  color: rgb(255 44 44 / var(--tw-text-opacity));
+}
+.nfsbird .rd-text-brand-white {
+  color: rgba(255, 255, 255, 1);
+}
+.nfsbird .rd-underline {
+  -webkit-text-decoration-line: underline;
+     -moz-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+.nfsbird .rd-opacity-0 {
+  opacity: 0;
+}
+.nfsbird .rd-opacity-60 {
+  opacity: 0.6;
+}
+.nfsbird .rd-shadow-deep {
+  --tw-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.25);
+  --tw-shadow-colored: 0px 3px 9px 0px var(--tw-shadow-color);
+  -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+          box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.nfsbird .rd-shadow-default {
+  --tw-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.25);
+  --tw-shadow-colored: 0px 1px 20px 0px var(--tw-shadow-color);
+  -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+          box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.nfsbird .rd-shadow-default-card {
+  --tw-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
+  --tw-shadow-colored: 0px 1px 10px 0px var(--tw-shadow-color);
+  -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+          box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.nfsbird .rd-shadow-default-light {
+  --tw-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.25);
+  --tw-shadow-colored: 0px 1px 20px 0px var(--tw-shadow-color);
+  -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+          box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.nfsbird .rd-shadow-default-light-alt {
+  --tw-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  --tw-shadow-colored: 0px 0px 10px 0px var(--tw-shadow-color);
+  -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+          box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.nfsbird .rd-shadow-default-light-blur-6 {
+  --tw-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.25);
+  --tw-shadow-colored: 0px 1px 6px 0px var(--tw-shadow-color);
+  -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+          box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.nfsbird .rd-shadow-flipcard {
+  --tw-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
+  --tw-shadow-colored: 0px 1px 10px 0px var(--tw-shadow-color);
+  -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+          box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.nfsbird .rd-shadow-flipcard-button {
+  --tw-shadow: 0px 1px 40px 0px rgba(0, 0, 0, 0.25);
+  --tw-shadow-colored: 0px 1px 40px 0px var(--tw-shadow-color);
+  -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+          box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.nfsbird .rd-shadow-footer {
+  --tw-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.5);
+  --tw-shadow-colored: 0px 0px 9px 0px var(--tw-shadow-color);
+  -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+          box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.nfsbird .rd-shadow-herobutton {
+  --tw-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  --tw-shadow-colored: 0px 4px 4px 0px var(--tw-shadow-color);
+  -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+          box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.nfsbird .rd-shadow-icon {
+  --tw-shadow: 0px 1px 12px rgba(0, 0, 0, 0.25);
+  --tw-shadow-colored: 0px 1px 12px var(--tw-shadow-color);
+  -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+          box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.nfsbird .rd-blur-sm {
+  --tw-blur: blur(4px);
+  -webkit-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+          filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.nfsbird .rd-drop-shadow-bottomnav-qld {
+  --tw-drop-shadow: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
+  -webkit-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+          filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.nfsbird .rd-drop-shadow-slider-navs {
+  --tw-drop-shadow: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.6));
+  -webkit-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+          filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.nfsbird .rd-backdrop-blur-\[2px\] {
+  --tw-backdrop-blur: blur(2px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+.nfsbird .rd-backdrop-blur-sm {
+  --tw-backdrop-blur: blur(3px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+.nfsbird .rd-backdrop-blur-subtle {
+  --tw-backdrop-blur: blur(2.7182817459106445px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+.nfsbird .rd-transition-all {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     -moz-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 150ms;
+     -moz-transition-duration: 150ms;
+          transition-duration: 150ms;
+}
+.nfsbird .rd-transition-colors {
+  -webkit-transition-property: color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;
+  transition-property: color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;
+  -moz-transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, -moz-text-decoration-color;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color, -moz-text-decoration-color;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     -moz-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 150ms;
+     -moz-transition-duration: 150ms;
+          transition-duration: 150ms;
+}
+.nfsbird .rd-transition-opacity {
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     -moz-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 150ms;
+     -moz-transition-duration: 150ms;
+          transition-duration: 150ms;
+}
+.nfsbird .rd-transition-transform {
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -moz-transition-property: transform, -moz-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform, -moz-transform;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     -moz-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 150ms;
+     -moz-transition-duration: 150ms;
+          transition-duration: 150ms;
+}
+.nfsbird .rd-duration-300 {
+  -webkit-transition-duration: 300ms;
+     -moz-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+.nfsbird .rd-duration-500 {
+  -webkit-transition-duration: 500ms;
+     -moz-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+.nfsbird .rd-font-medium {
+  font-weight: 500;
+  font-variation-settings: "wght" 500;
+}
+.nfsbird .rd-font-medium.rd-italic {
+  font-variation-settings: "slnt" 1, "wght" 500;
+}
+.nfsbird .rd-font-semibold {
+  font-weight: 600;
+  font-variation-settings: "wght" 600;
+}
+.nfsbird .rd-font-semibold.rd-italic {
+  font-variation-settings: "slnt" 1, "wght" 600;
+}
+.nfsbird .rd-font-bold {
+  font-weight: 700;
+  font-variation-settings: "wght" 700;
+}
+.nfsbird .rd-font-bold.rd-italic {
+  font-variation-settings: "slnt" 1, "wght" 700;
+}
+/* Reusable Icons */
+.nfsbird .rd-icon-el {
+  background-color: transparent;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
+}
+.nfsbird .rd-icon-el.rd-icon-chevron-down-black {
+                background-image: url('../icons/chevron-down-black.svg');
+                -webkit-background-size: 1rem auto;
+                        background-size: 1rem auto;
+                background-position: right;
+            }
+.nfsbird .rd-icon-el.rd-icon-caret-right-blue {
+                background-image: url('../icons/caret-right-blue.svg');
+                -webkit-background-size: auto 0.5rem;
+                        background-size: auto 0.5rem;
+                background-position: right;
+            }
+.nfsbird .rd-icon-el.rd-icon-cross-white {
+                background-image: url('../icons/cross-white.svg');
+                -webkit-background-size: 0.875rem auto;
+                        background-size: 0.875rem auto;
+                background-position: center;
+            }
+.nfsbird .rd-icon-el.rd-icon-cross-light-grey-alt {
+                background-image: url('../icons/cross-light-grey-alt.svg');
+                -webkit-background-size: 0.875rem auto;
+                        background-size: 0.875rem auto;
+                background-position: center;
+            }
+.nfsbird .rd-icon-el.rd-no-icon {
+  background-image: none;
+}
+/* Inline icon styles */
+.nfsbird .rd-inline-icon-w-2 svg {
+  height: auto;
+  width: 0.5rem;
+}
+.nfsbird .rd-inline-icon-w-2\.5 svg {
+  height: auto;
+  width: 0.625rem;
+}
+.nfsbird .rd-inline-icon-w-3 svg {
+  height: auto;
+  width: 0.75rem;
+}
+.nfsbird .rd-inline-icon-w-3\.5 svg {
+  height: auto;
+  width: 0.875rem;
+}
+.nfsbird .rd-inline-icon-w-4 svg {
+  height: auto;
+  width: 1rem;
+}
+.nfsbird .rd-inline-icon-w-5 svg {
+  height: auto;
+  width: 1.25rem;
+}
+.nfsbird .rd-inline-icon-h-2 svg {
+  height: 0.5rem;
+  width: auto;
+}
+.nfsbird .rd-inline-icon-h-4 svg {
+  height: 1rem;
+  width: auto;
+}
+.nfsbird .rd-inline-icon-h-4\.5 svg {
+  height: 1.125rem;
+  width: auto;
+}
+.nfsbird .rd-inline-icon-h-5 svg {
+  height: 1.25rem;
+  width: auto;
+}
+.nfsbird .rd-inline-icon-h-8 svg {
+  height: 2rem;
+  width: auto;
+}
+/* Custom Sizing Utilities */
+.nfsbird .rd-h-full-screen {
+        height: -webkit-calc(100vh - 45px);
+        height: -moz-calc(100vh - 45px);
+        height: calc(100vh - 45px); /* Fallback value */
+        height: -webkit-calc((var(--rd-vh, 1vh) * 100) - 45px);
+        height: -moz-calc((var(--rd-vh, 1vh) * 100) - 45px);
+        height: calc((var(--rd-vh, 1vh) * 100) - 45px);
+    }
+/* Container Reset */
+/* Animation Utilities */
+.nfsbird .rd-flip-vertical {
+        -webkit-transform: rotateX(180deg);
+           -moz-transform: rotateX(180deg);
+                transform: rotateX(180deg);
+    }
+.nfsbird .rd-border-b-half-from-black {
+        border-bottom: 1px solid;
+        -webkit-border-image: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(45, 45, 45, 1)), color-stop(50%, transparent)) 100% 1;
+        -webkit-border-image: -webkit-linear-gradient(left, rgba(45, 45, 45, 1) 50%, transparent 50%) 100% 1;
+           -moz-border-image: -moz-linear-gradient(left, rgba(45, 45, 45, 1) 50%, transparent 50%) 100% 1;
+             -o-border-image: linear-gradient(to right, rgba(45, 45, 45, 1) 50%, transparent 50%) 100% 1;
+                border-image: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(45, 45, 45, 1)), color-stop(50%, transparent)) 100% 1;
+                border-image: linear-gradient(to right, rgba(45, 45, 45, 1) 50%, transparent 50%) 100% 1;
+    }
+.nfsbird .rd-border-b-container-mobile::after {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  display: block;
+  border-bottom-width: 1px;
+        content: '';
+        width: -webkit-calc(100% - 2.5rem);
+        width: -moz-calc(100% - 2.5rem);
+        width: calc(100% - 2.5rem);
+}
+@media (min-width: 1024px) {
+
+    .nfsbird .rd-border-b-container-mobile::after {
+    --tw-content: none;
+    content: var(--tw-content);
+  } }
+/* Hide scrollbar */
+.nfsbird .rd-hide-scrollbar {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+.nfsbird .rd-hide-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+/* Increase Specificity */
+.nfsbird .rd-text-brand-blue-important {
+        color: rgba(0, 177, 242, 1) !important;
+    }
+@media (min-width: 1024px) {
+
+    .nfsbird .md\:rd-container-outer {
+        max-width: 2560px;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        margin: auto;
+    }
+
+        @media (min-width: 1200px) {
+
+    .nfsbird .md\:rd-container-outer {
+            padding-left: 5rem;
+            padding-right: 5rem
+    }
+        }
+    .nfsbird .md\:rd-no-drawer {
+    -webkit-transform-origin: center;
+       -moz-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: none;
+       -moz-transform: none;
+        -ms-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+    .nfsbird .md\:rd-bg-cta-linear-gradient {
+        background: -webkit-linear-gradient(141deg, #595959 5.53%, #0D0D0D 84.19%);
+        background: -moz-linear-gradient(141deg, #595959 5.53%, #0D0D0D 84.19%);
+        background: linear-gradient(309deg, #595959 5.53%, #0D0D0D 84.19%);
+    }
+
+        .nfsbird .rd-group:hover .md\:group-hover\:rd-drawer-open.rd-drawer {
+    --tw-scale-y: 1;
+    -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+       -moz-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+        -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    opacity: 1;
+  }
+
+            .nfsbird .rd-group:hover .md\:group-hover\:rd-drawer-open.rd-drawer.rd-drawer-flow {
+                max-height: 100rem;
+            }
+
+                .nfsbird .rd-group:hover .md\:group-hover\:rd-drawer-open.rd-drawer.rd-drawer-flow.rd-drawer-flow-no-transition {
+    height: auto;
+  }
+}
+.nfsbird .placeholder\:rd-text-brand-grey-alt::-webkit-input-placeholder {
+  color: rgba(151, 151, 151, 1);
+}
+.nfsbird .placeholder\:rd-text-brand-grey-alt::-moz-placeholder {
+  color: rgba(151, 151, 151, 1);
+}
+.nfsbird .placeholder\:rd-text-brand-grey-alt:-ms-input-placeholder {
+  color: rgba(151, 151, 151, 1);
+}
+.nfsbird .placeholder\:rd-text-brand-grey-alt::-ms-input-placeholder {
+  color: rgba(151, 151, 151, 1);
+}
+.nfsbird .placeholder\:rd-text-brand-grey-alt::placeholder {
+  color: rgba(151, 151, 151, 1);
+}
+.nfsbird .first\:rd-mb-2:first-child {
+  margin-bottom: 0.5rem;
+}
+.nfsbird .first\:rd-mb-2\.5:first-child {
+  margin-bottom: 0.625rem;
+}
+.nfsbird .first\:rd-mb-5:first-child {
+  margin-bottom: 1.25rem;
+}
+.nfsbird .first\:rd-rounded-t-small:first-child {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.nfsbird .first\:rd-border-b:first-child {
+  border-bottom-width: 1px;
+}
+.nfsbird .first\:rd-pb-0:first-child {
+  padding-bottom: 0px;
+}
+.nfsbird .first\:rd-pb-7:first-child {
+  padding-bottom: 1.75rem;
+}
+.nfsbird .first\:rd-pb-7\.5:first-child {
+  padding-bottom: 1.875rem;
+}
+.nfsbird .first\:rd-pr-0:first-child {
+  padding-right: 0px;
+}
+.nfsbird .first\:rd-pt-5:first-child {
+  padding-top: 1.25rem;
+}
+.nfsbird .last\:rd-mb-0:last-child {
+  margin-bottom: 0px;
+}
+.nfsbird .last\:rd-mr-0:last-child {
+  margin-right: 0px;
+}
+.nfsbird .last\:rd-rounded-b-small:last-child {
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.nfsbird .last\:rd-border-none:last-child {
+  border-style: none;
+}
+.nfsbird .last\:rd-pb-10:last-child {
+  padding-bottom: 2.5rem;
+}
+.nfsbird .last\:rd-pb-5:last-child {
+  padding-bottom: 1.25rem;
+}
+.nfsbird .last\:rd-pr-0:last-child {
+  padding-right: 0px;
+}
+.nfsbird .last\:rd-pt-0:last-child {
+  padding-top: 0px;
+}
+.nfsbird .last\:rd-border-b-half-from-black:last-child {
+        border-bottom: 1px solid;
+        -webkit-border-image: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(45, 45, 45, 1)), color-stop(50%, transparent)) 100% 1;
+        -webkit-border-image: -webkit-linear-gradient(left, rgba(45, 45, 45, 1) 50%, transparent 50%) 100% 1;
+           -moz-border-image: -moz-linear-gradient(left, rgba(45, 45, 45, 1) 50%, transparent 50%) 100% 1;
+             -o-border-image: linear-gradient(to right, rgba(45, 45, 45, 1) 50%, transparent 50%) 100% 1;
+                border-image: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(45, 45, 45, 1)), color-stop(50%, transparent)) 100% 1;
+                border-image: linear-gradient(to right, rgba(45, 45, 45, 1) 50%, transparent 50%) 100% 1;
+    }
+.nfsbird .odd\:rd-mr-2:nth-child(odd) {
+  margin-right: 0.5rem;
+}
+.nfsbird .odd\:rd-mr-2\.5:nth-child(odd) {
+  margin-right: 0.625rem;
+}
+.nfsbird .even\:rd-ml-2:nth-child(even) {
+  margin-left: 0.5rem;
+}
+.nfsbird .even\:rd-ml-2\.5:nth-child(even) {
+  margin-left: 0.625rem;
+}
+.nfsbird .hover\:rd-cursor-pointer:hover {
+  cursor: pointer;
+}
+.nfsbird .hover\:rd-border-brand-blue:hover {
+  border-color: rgba(0, 177, 242, 1);
+}
+.nfsbird .hover\:rd-bg-brand-blue:hover {
+  background-color: rgba(0, 177, 242, 1);
+}
+.nfsbird .hover\:rd-bg-brand-lighter-blue:hover {
+  background-color: rgba(242, 247, 253, 1);
+}
+.nfsbird .hover\:rd-bg-brand-slightly-darker-blue:hover {
+  background-color: rgb(0, 168, 230);
+}
+.nfsbird .hover\:rd-bg-brand-slightly-darker-white:hover {
+  background-color: rgb(242, 242, 242);
+}
+.nfsbird .hover\:rd-bg-brand-white:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+.nfsbird .hover\:rd-text-brand-black:hover {
+  color: rgba(45, 45, 45, 1);
+}
+.nfsbird .hover\:rd-text-brand-blue:hover {
+  color: rgba(0, 177, 242, 1);
+}
+.nfsbird .hover\:rd-text-brand-white:hover {
+  color: rgba(255, 255, 255, 1);
+}
+.nfsbird .hover\:rd-opacity-100:hover {
+  opacity: 1;
+}
+.nfsbird .hover\:rd-opacity-80:hover {
+  opacity: 0.8;
+}
+.nfsbird .hover\:rd-shadow-flipcard-hover:hover {
+  --tw-shadow: 0px 0px 10px 0px rgba(0, 177, 242, 0.3);
+  --tw-shadow-colored: 0px 0px 10px 0px var(--tw-shadow-color);
+  -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+          box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.nfsbird .hover\:rd-shadow-hovered:hover {
+  --tw-shadow: 0px 5px 15px 0px rgba(0, 177, 242, 0.3);
+  --tw-shadow-colored: 0px 5px 15px 0px var(--tw-shadow-color);
+  -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+          box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.nfsbird .focus\:rd-left-0:focus {
+  left: 0px;
+}
+.nfsbird .focus\:rd-right-0:focus {
+  right: 0px;
+}
+.nfsbird .focus\:rd-w-full:focus {
+  width: 100%;
+}
+.nfsbird .focus\:rd-cursor-text:focus {
+  cursor: text;
+}
+.nfsbird .focus\:rd-border-brand-light-blue-nlp:focus {
+  border-color: rgb(76, 200, 246);
+}
+.nfsbird .focus\:rd-bg-brand-black-alt:focus {
+  background-color: rgba(36, 36, 36, 1);
+}
+.nfsbird .focus\:rd-pl-14:focus {
+  padding-left: 3.5rem;
+}
+.nfsbird .focus\:rd-pr-12:focus {
+  padding-right: 3rem;
+}
+.nfsbird .focus\:rd-opacity-100:focus {
+  opacity: 1;
+}
+.nfsbird .focus-visible\:rd-outline:focus-visible {
+  outline-style: solid;
+}
+.nfsbird .focus-visible\:rd-outline-2:focus-visible {
+  outline-width: 2px;
+}
+.nfsbird .focus-visible\:rd-outline-offset-2:focus-visible {
+  outline-offset: 2px;
+}
+.nfsbird .disabled\:rd-bg-brand-light-grey-alt:disabled {
+  background-color: rgba(216, 216, 216, 1);
+}
+.nfsbird .rd-group\/ls:first-child .group-first\/ls\:rd-rounded-t-small {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.nfsbird .rd-group\/ls:last-child .group-last\/ls\:rd-rounded-b-small {
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.nfsbird .rd-group:hover .group-hover\:rd-scale-105 {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+     -moz-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.nfsbird .rd-group\/advert:hover .group-hover\/advert\:rd-bg-brand-blue {
+  background-color: rgba(0, 177, 242, 1);
+}
+.nfsbird .rd-group:hover .group-hover\:rd-bg-brand-blue {
+  background-color: rgba(0, 177, 242, 1);
+}
+.nfsbird .rd-group\/advert:hover .group-hover\/advert\:rd-text-brand-white {
+  color: rgba(255, 255, 255, 1);
+}
+.nfsbird .rd-group:hover .group-hover\:rd-text-brand-white {
+  color: rgba(255, 255, 255, 1);
+}
+.nfsbird .rd-group\/lang-link:hover .group-hover\/lang-link\:rd-opacity-100 {
+  opacity: 1;
+}
+.nfsbird .rd-group\/primary-link:hover .group-hover\/primary-link\:rd-opacity-100 {
+  opacity: 1;
+}
+.nfsbird .rd-peer:focus ~ .peer-focus\:rd-left-0 {
+  left: 0px;
+}
+.nfsbird .rd-peer:focus ~ .peer-focus\:rd-right-4 {
+  right: 1rem;
+}
+.nfsbird .rd-peer:focus ~ .peer-focus\:rd-text-brand-white {
+  color: rgba(255, 255, 255, 1);
+}
+.nfsbird .rd-peer:focus ~ .peer-focus\:rd-opacity-100 {
+  opacity: 1;
+}
+@media (min-width: 540px) {
+
+  .nfsbird .xs\:rd-absolute {
+    position: absolute;
+  }
+
+  .nfsbird .xs\:rd-mr-7 {
+    margin-right: 1.75rem;
+  }
+
+  .nfsbird .xs\:rd-mr-7\.5 {
+    margin-right: 1.875rem;
+  }
+
+  .nfsbird .xs\:rd-block {
+    display: block;
+  }
+
+  .nfsbird .xs\:rd-h-full {
+    height: 100%;
+  }
+
+  .nfsbird .xs\:rd-text-brand-black {
+    color: rgba(45, 45, 45, 1);
+  }
+}
+@media (min-width: 768px) {
+
+  .nfsbird .sm\:rd-static {
+    position: static;
+  }
+
+  .nfsbird .sm\:rd-bottom-4 {
+    bottom: 1rem;
+  }
+
+  .nfsbird .sm\:rd-bottom-5 {
+    bottom: 1.25rem;
+  }
+
+  .nfsbird .sm\:rd-right-5 {
+    right: 1.25rem;
+  }
+
+  .nfsbird .sm\:rd-col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .nfsbird .sm\:rd-col-start-2 {
+    grid-column-start: 2;
+  }
+
+  .nfsbird .sm\:rd-row-span-1 {
+    grid-row: span 1 / span 1;
+  }
+
+  .nfsbird .sm\:rd-row-span-2 {
+    grid-row: span 2 / span 2;
+  }
+
+  .nfsbird .sm\:rd-mb-4 {
+    margin-bottom: 1rem;
+  }
+
+  .nfsbird .sm\:rd-mb-5 {
+    margin-bottom: 1.25rem;
+  }
+
+  .nfsbird .sm\:rd-mt-\[46px\] {
+    margin-top: 46px;
+  }
+
+  .nfsbird .sm\:rd-block {
+    display: block;
+  }
+
+  .nfsbird .sm\:rd-hidden {
+    display: none;
+  }
+
+  .nfsbird .sm\:rd-min-w-dropdown {
+    min-width: 14ch;
+  }
+
+  .nfsbird .sm\:rd-max-w-7\/10 {
+    max-width: 70%;
+  }
+
+  .nfsbird .sm\:rd-gap-2 {
+    gap: 0.5rem;
+  }
+
+  .nfsbird .sm\:rd-gap-x-2 {
+    -webkit-column-gap: 0.5rem;
+       -moz-column-gap: 0.5rem;
+            column-gap: 0.5rem;
+  }
+
+  .nfsbird .sm\:rd-gap-y-0 {
+    row-gap: 0px;
+  }
+
+  .nfsbird .sm\:rd-whitespace-nowrap {
+    white-space: nowrap;
+  }
+
+  .nfsbird .sm\:rd-rounded-subtle {
+    border-radius: 0.625rem;
+  }
+
+  .nfsbird .sm\:rd-p-5 {
+    padding: 1.25rem;
+  }
+
+  .nfsbird .sm\:rd-pt-\[32\.17\%\] {
+    padding-top: 32.17%;
+  }
+
+  .nfsbird .sm\:rd-text-2xl-alt {
+    font-size: 1.625rem;
+  }
+}
+@media (min-width: 1024px) {
+
+  .nfsbird .md\:rd-invisible {
+    visibility: hidden;
+  }
+
+  .nfsbird .md\:rd-static {
+    position: static;
+  }
+
+  .nfsbird .md\:rd-absolute {
+    position: absolute;
+  }
+
+  .nfsbird .md\:rd-relative {
+    position: relative;
+  }
+
+  .nfsbird .md\:rd-left-0 {
+    left: 0px;
+  }
+
+  .nfsbird .md\:rd-left-auto {
+    left: auto;
+  }
+
+  .nfsbird .md\:rd-right-0 {
+    right: 0px;
+  }
+
+  .nfsbird .md\:rd-top-hanging-drawer {
+    top: -webkit-calc(100% + 0.25rem);
+    top: -moz-calc(100% + 0.25rem);
+    top: calc(100% + 0.25rem);
+  }
+
+  .nfsbird .md\:rd-top-hanging-drawer-2\.5 {
+    top: -webkit-calc(100% + 0.625rem);
+    top: -moz-calc(100% + 0.625rem);
+    top: calc(100% + 0.625rem);
+  }
+
+  .nfsbird .md\:rd-top-hanging-drawer-helper {
+    top: -webkit-calc(100% + 0.5rem);
+    top: -moz-calc(100% + 0.5rem);
+    top: calc(100% + 0.5rem);
+  }
+
+  .nfsbird .md\:rd-z-20 {
+    z-index: 20;
+  }
+
+  .nfsbird .md\:rd-order-1 {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+       -moz-box-ordinal-group: 2;
+            order: 1;
+  }
+
+  .nfsbird .md\:rd-order-2 {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+       -moz-box-ordinal-group: 3;
+            order: 2;
+  }
+
+  .nfsbird .md\:rd-order-3 {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+       -moz-box-ordinal-group: 4;
+            order: 3;
+  }
+
+  .nfsbird .md\:rd-col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .nfsbird .md\:rd-col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .nfsbird .md\:rd-row-span-2 {
+    grid-row: span 2 / span 2;
+  }
+
+  .nfsbird .md\:rd-mx-2 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .nfsbird .md\:rd-mx-2\.75 {
+    margin-left: 0.6875rem;
+    margin-right: 0.6875rem;
+  }
+
+  .nfsbird .md\:rd-mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nfsbird .md\:-rd-ml-2 {
+    margin-left: -0.5rem;
+  }
+
+  .nfsbird .md\:-rd-ml-2\.5 {
+    margin-left: -0.625rem;
+  }
+
+  .nfsbird .md\:-rd-ml-7 {
+    margin-left: -1.75rem;
+  }
+
+  .nfsbird .md\:-rd-ml-7\.5 {
+    margin-left: -1.875rem;
+  }
+
+  .nfsbird .md\:-rd-mt-1 {
+    margin-top: -0.25rem;
+  }
+
+  .nfsbird .md\:rd-mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .nfsbird .md\:rd-mb-1 {
+    margin-bottom: 0.25rem;
+  }
+
+  .nfsbird .md\:rd-mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .nfsbird .md\:rd-mb-2\.5 {
+    margin-bottom: 0.625rem;
+  }
+
+  .nfsbird .md\:rd-mb-20 {
+    margin-bottom: 5rem;
+  }
+
+  .nfsbird .md\:rd-mb-3 {
+    margin-bottom: 0.75rem;
+  }
+
+  .nfsbird .md\:rd-mb-5 {
+    margin-bottom: 1.25rem;
+  }
+
+  .nfsbird .md\:rd-mb-6 {
+    margin-bottom: 1.5rem;
+  }
+
+  .nfsbird .md\:rd-mb-7 {
+    margin-bottom: 1.75rem;
+  }
+
+  .nfsbird .md\:rd-mb-7\.5 {
+    margin-bottom: 1.875rem;
+  }
+
+  .nfsbird .md\:rd-ml-0 {
+    margin-left: 0px;
+  }
+
+  .nfsbird .md\:rd-mr-0 {
+    margin-right: 0px;
+  }
+
+  .nfsbird .md\:rd-mr-1 {
+    margin-right: 0.25rem;
+  }
+
+  .nfsbird .md\:rd-mr-1\.5 {
+    margin-right: 0.375rem;
+  }
+
+  .nfsbird .md\:rd-mr-10 {
+    margin-right: 2.5rem;
+  }
+
+  .nfsbird .md\:rd-mr-2 {
+    margin-right: 0.5rem;
+  }
+
+  .nfsbird .md\:rd-mr-5 {
+    margin-right: 1.25rem;
+  }
+
+  .nfsbird .md\:rd-mr-7 {
+    margin-right: 1.75rem;
+  }
+
+  .nfsbird .md\:rd-mr-7\.5 {
+    margin-right: 1.875rem;
+  }
+
+  .nfsbird .md\:rd-mt-0 {
+    margin-top: 0px;
+  }
+
+  .nfsbird .md\:rd-mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .nfsbird .md\:rd-mt-2 {
+    margin-top: 0.5rem;
+  }
+
+  .nfsbird .md\:rd-mt-2\.5 {
+    margin-top: 0.625rem;
+  }
+
+  .nfsbird .md\:rd-block {
+    display: block;
+  }
+
+  .nfsbird .md\:rd-inline-block {
+    display: inline-block;
+  }
+
+  .nfsbird .md\:rd-inline {
+    display: inline;
+  }
+
+  .nfsbird .md\:rd-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+  }
+
+  .nfsbird .md\:rd-grid {
+    display: grid;
+  }
+
+  .nfsbird .md\:rd-hidden {
+    display: none;
+  }
+
+  .nfsbird .md\:rd-h-12 {
+    height: 3rem;
+  }
+
+  .nfsbird .md\:rd-h-15 {
+    height: 3.75rem;
+  }
+
+  .nfsbird .md\:rd-h-27\.5 {
+    height: 6.875rem;
+  }
+
+  .nfsbird .md\:rd-h-4 {
+    height: 1rem;
+  }
+
+  .nfsbird .md\:rd-h-4\.5 {
+    height: 1.125rem;
+  }
+
+  .nfsbird .md\:rd-h-8 {
+    height: 2rem;
+  }
+
+  .nfsbird .md\:rd-h-auto {
+    height: auto;
+  }
+
+  .nfsbird .md\:rd-h-full {
+    height: 100%;
+  }
+
+  .nfsbird .md\:rd-max-h-none {
+    max-height: none;
+  }
+
+  .nfsbird .md\:rd-w-0 {
+    width: 0px;
+  }
+
+  .nfsbird .md\:rd-w-1\/2 {
+    width: 50%;
+  }
+
+  .nfsbird .md\:rd-w-12 {
+    width: 3rem;
+  }
+
+  .nfsbird .md\:rd-w-155 {
+    width: 38.75rem;
+  }
+
+  .nfsbird .md\:rd-w-27\.5 {
+    width: 6.875rem;
+  }
+
+  .nfsbird .md\:rd-w-40 {
+    width: 10rem;
+  }
+
+  .nfsbird .md\:rd-w-\[70\%\] {
+    width: 70%;
+  }
+
+  .nfsbird .md\:rd-w-auto {
+    width: auto;
+  }
+
+  .nfsbird .md\:rd-w-full {
+    width: 100%;
+  }
+
+  .nfsbird .md\:rd-min-w-35 {
+    min-width: 8.75rem;
+  }
+
+  .nfsbird .md\:rd-max-w-5\.6xl {
+    max-width: 68.75rem;
+  }
+
+  .nfsbird .md\:rd-max-w-none {
+    max-width: none;
+  }
+
+  .nfsbird .md\:rd-flex-1 {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 0%;
+       -moz-box-flex: 1;
+            flex: 1 1 0%;
+  }
+
+  .nfsbird .md\:rd-flex-auto {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+       -moz-box-flex: 1;
+            flex: 1 1 auto;
+  }
+
+  .nfsbird .md\:rd-flex-none {
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+       -moz-box-flex: 0;
+            flex: none;
+  }
+
+  .nfsbird .md\:rd-basis-1\/3 {
+    -webkit-flex-basis: 33.333333%;
+            flex-basis: 33.333333%;
+  }
+
+  .nfsbird .md\:rd-basis-1\/5 {
+    -webkit-flex-basis: 20%;
+            flex-basis: 20%;
+  }
+
+  .nfsbird .md\:rd-basis-cta-qr {
+    -webkit-flex-basis: 28.5556%;
+            flex-basis: 28.5556%;
+  }
+
+  .nfsbird .md\:-rd-translate-y-px {
+    --tw-translate-y: -1px;
+    -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+       -moz-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+        -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .nfsbird .md\:rd-cursor-auto {
+    cursor: auto;
+  }
+
+  .nfsbird .md\:rd-grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .nfsbird .md\:rd-grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .nfsbird .md\:rd-grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .nfsbird .md\:rd-grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .nfsbird .md\:rd-grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
+  .nfsbird .md\:rd-flex-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+            flex-direction: row;
+  }
+
+  .nfsbird .md\:rd-flex-col {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+            flex-direction: column;
+  }
+
+  .nfsbird .md\:rd-flex-nowrap {
+    -webkit-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+  }
+
+  .nfsbird .md\:rd-items-end {
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+       -moz-box-align: end;
+            align-items: flex-end;
+  }
+
+  .nfsbird .md\:rd-items-center {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+            align-items: center;
+  }
+
+  .nfsbird .md\:rd-justify-start {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+       -moz-box-pack: start;
+            justify-content: flex-start;
+  }
+
+  .nfsbird .md\:rd-justify-end {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+       -moz-box-pack: end;
+            justify-content: flex-end;
+  }
+
+  .nfsbird .md\:rd-justify-center {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+            justify-content: center;
+  }
+
+  .nfsbird .md\:rd-justify-between {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+            justify-content: space-between;
+  }
+
+  .nfsbird .md\:rd-gap-x-5 {
+    -webkit-column-gap: 1.25rem;
+       -moz-column-gap: 1.25rem;
+            column-gap: 1.25rem;
+  }
+
+  .nfsbird .md\:rd-gap-x-6 {
+    -webkit-column-gap: 1.5rem;
+       -moz-column-gap: 1.5rem;
+            column-gap: 1.5rem;
+  }
+
+  .nfsbird .md\:rd-overflow-visible {
+    overflow: visible;
+  }
+
+  .nfsbird .md\:rd-rounded {
+    border-radius: 1.25rem;
+  }
+
+  .nfsbird .md\:rd-rounded-full {
+    border-radius: 50%;
+  }
+
+  .nfsbird .md\:rd-rounded-none {
+    border-radius: 0px;
+  }
+
+  .nfsbird .md\:rd-rounded-semi {
+    border-radius: 1rem;
+  }
+
+  .nfsbird .md\:rd-rounded-slightly-less {
+    border-radius: 1.125rem;
+  }
+
+  .nfsbird .md\:rd-rounded-small {
+    border-radius: 0.5rem;
+  }
+
+  .nfsbird .md\:rd-rounded-l-slightly-less {
+    border-top-left-radius: 1.125rem;
+    border-bottom-left-radius: 1.125rem;
+  }
+
+  .nfsbird .md\:rd-border-b-3 {
+    border-bottom-width: 3px;
+  }
+
+  .nfsbird .md\:rd-border-l {
+    border-left-width: 1px;
+  }
+
+  .nfsbird .md\:rd-border-r {
+    border-right-width: 1px;
+  }
+
+  .nfsbird .md\:rd-border-none {
+    border-style: none;
+  }
+
+  .nfsbird .md\:rd-border-brand-blue {
+    border-color: rgba(0, 177, 242, 1);
+  }
+
+  .nfsbird .md\:rd-bg-brand-blue {
+    background-color: rgba(0, 177, 242, 1);
+  }
+
+  .nfsbird .md\:rd-bg-brand-blue-transparent-20 {
+    background-color: rgba(0, 177, 242, 0.2);
+  }
+
+  .nfsbird .md\:rd-bg-brand-light-grey-alt-2 {
+    background-color: rgb(225, 225, 225);
+  }
+
+  .nfsbird .md\:rd-bg-brand-lighter-blue {
+    background-color: rgba(242, 247, 253, 1);
+  }
+
+  .nfsbird .md\:rd-bg-brand-lightish-grey {
+    background-color: rgba(138, 138, 150, 1);
+  }
+
+  .nfsbird .md\:rd-bg-brand-white {
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  .nfsbird .md\:rd-bg-brand-white-transparent-85 {
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+
+  .nfsbird .md\:rd-p-0 {
+    padding: 0px;
+  }
+
+  .nfsbird .md\:rd-p-2 {
+    padding: 0.5rem;
+  }
+
+  .nfsbird .md\:rd-p-2\.5 {
+    padding: 0.625rem;
+  }
+
+  .nfsbird .md\:rd-p-5 {
+    padding: 1.25rem;
+  }
+
+  .nfsbird .md\:rd-p-7 {
+    padding: 1.75rem;
+  }
+
+  .nfsbird .md\:rd-px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .nfsbird .md\:rd-px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .nfsbird .md\:rd-px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .nfsbird .md\:rd-px-2\.5 {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+  }
+
+  .nfsbird .md\:rd-px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .nfsbird .md\:rd-px-4\.5 {
+    padding-left: 1.125rem;
+    padding-right: 1.125rem;
+  }
+
+  .nfsbird .md\:rd-px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .nfsbird .md\:rd-px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
+  .nfsbird .md\:rd-px-7\.5 {
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+  }
+
+  .nfsbird .md\:rd-px-\[60px\] {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .nfsbird .md\:rd-py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .nfsbird .md\:rd-py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .nfsbird .md\:rd-py-1\.5 {
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+  }
+
+  .nfsbird .md\:rd-py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .nfsbird .md\:rd-py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .nfsbird .md\:rd-py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .nfsbird .md\:rd-py-7 {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+
+  .nfsbird .md\:rd-py-7\.5 {
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+  }
+
+  .nfsbird .md\:rd-pb-2 {
+    padding-bottom: 0.5rem;
+  }
+
+  .nfsbird .md\:rd-pb-2\.75 {
+    padding-bottom: 0.6875rem;
+  }
+
+  .nfsbird .md\:rd-pl-0 {
+    padding-left: 0px;
+  }
+
+  .nfsbird .md\:rd-pl-10 {
+    padding-left: 2.5rem;
+  }
+
+  .nfsbird .md\:rd-pl-2 {
+    padding-left: 0.5rem;
+  }
+
+  .nfsbird .md\:rd-pl-2\.5 {
+    padding-left: 0.625rem;
+  }
+
+  .nfsbird .md\:rd-pr-0 {
+    padding-right: 0px;
+  }
+
+  .nfsbird .md\:rd-pr-10 {
+    padding-right: 2.5rem;
+  }
+
+  .nfsbird .md\:rd-pr-11 {
+    padding-right: 2.75rem;
+  }
+
+  .nfsbird .md\:rd-pt-0 {
+    padding-top: 0px;
+  }
+
+  .nfsbird .md\:rd-pt-15 {
+    padding-top: 3.75rem;
+  }
+
+  .nfsbird .md\:rd-pt-3 {
+    padding-top: 0.75rem;
+  }
+
+  .nfsbird .md\:rd-pt-3\.5 {
+    padding-top: 0.875rem;
+  }
+
+  .nfsbird .md\:rd-pt-7 {
+    padding-top: 1.75rem;
+  }
+
+  .nfsbird .md\:rd-pt-7\.5 {
+    padding-top: 1.875rem;
+  }
+
+  .nfsbird .md\:rd-pt-\[68\.69\%\] {
+    padding-top: 68.69%;
+  }
+
+  .nfsbird .md\:rd-text-left {
+    text-align: left;
+  }
+
+  .nfsbird .md\:rd-text-center {
+    text-align: center;
+  }
+
+  .nfsbird .md\:rd-text-base {
+    font-size: 1rem;
+  }
+
+  .nfsbird .md\:rd-text-lg {
+    font-size: 1.125rem;
+  }
+
+  .nfsbird .md\:rd-text-sm {
+    font-size: 0.875rem;
+  }
+
+  .nfsbird .md\:rd-text-sm-alt {
+    font-size: 0.8125rem;
+  }
+
+  .nfsbird .md\:rd-text-xs {
+    font-size: 0.75rem;
+  }
+
+  .nfsbird .md\:rd-text-brand-black {
+    color: rgba(45, 45, 45, 1);
+  }
+
+  .nfsbird .md\:rd-text-brand-blue {
+    color: rgba(0, 177, 242, 1);
+  }
+
+  .nfsbird .md\:rd-text-brand-white {
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .nfsbird .md\:rd-shadow-cta-desktop {
+    --tw-shadow: 0px 5px 40px 0px rgba(45, 45, 45, 0.2);
+    --tw-shadow-colored: 0px 5px 40px 0px var(--tw-shadow-color);
+    -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .nfsbird .md\:rd-shadow-deep {
+    --tw-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.25);
+    --tw-shadow-colored: 0px 3px 9px 0px var(--tw-shadow-color);
+    -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .nfsbird .md\:rd-shadow-deeper {
+    --tw-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.50);
+    --tw-shadow-colored: 0px 3px 9px 0px var(--tw-shadow-color);
+    -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .nfsbird .md\:rd-shadow-default-light {
+    --tw-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.25);
+    --tw-shadow-colored: 0px 1px 20px 0px var(--tw-shadow-color);
+    -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .nfsbird .md\:rd-shadow-kc-card-icon {
+    --tw-shadow: 0px 1px 50px 0px rgba(0, 0, 0, 0.25);
+    --tw-shadow-colored: 0px 1px 50px 0px var(--tw-shadow-color);
+    -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .nfsbird .md\:rd-transition-colors {
+    -webkit-transition-property: color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;
+    transition-property: color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;
+    -moz-transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, -moz-text-decoration-color;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color, -moz-text-decoration-color;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+       -moz-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition-duration: 150ms;
+       -moz-transition-duration: 150ms;
+            transition-duration: 150ms;
+  }
+
+  .nfsbird .md\:rd-duration-300 {
+    -webkit-transition-duration: 300ms;
+       -moz-transition-duration: 300ms;
+            transition-duration: 300ms;
+  }
+
+  .nfsbird .md\:rd-font-normal {
+    font-weight: 400;
+    font-variation-settings: "wght" 400;
+  }
+
+  .nfsbird .md\:rd-font-normal.rd-italic {
+    font-variation-settings: "slnt" 1, "wght" 400;
+  }
+
+  .nfsbird .md\:rd-font-semibold {
+    font-weight: 600;
+    font-variation-settings: "wght" 600;
+  }
+
+  .nfsbird .md\:rd-font-semibold.rd-italic {
+    font-variation-settings: "slnt" 1, "wght" 600;
+  }
+    .nfsbird .md\:rd-icon-el {
+    background-color: transparent;
+    -webkit-background-size: contain;
+            background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+            .nfsbird .md\:rd-icon-el.rd-icon-chevron-down-black {
+                background-image: url('../icons/chevron-down-black.svg');
+                -webkit-background-size: 1rem auto;
+                        background-size: 1rem auto;
+                background-position: right;
+            }
+
+            .nfsbird .md\:rd-icon-el.rd-icon-caret-right-blue {
+                background-image: url('../icons/caret-right-blue.svg');
+                -webkit-background-size: auto 0.5rem;
+                        background-size: auto 0.5rem;
+                background-position: right;
+            }
+
+            .nfsbird .md\:rd-icon-el.rd-icon-cross-white {
+                background-image: url('../icons/cross-white.svg');
+                -webkit-background-size: 0.875rem auto;
+                        background-size: 0.875rem auto;
+                background-position: center;
+            }
+
+            .nfsbird .md\:rd-icon-el.rd-icon-cross-light-grey-alt {
+                background-image: url('../icons/cross-light-grey-alt.svg');
+                -webkit-background-size: 0.875rem auto;
+                        background-size: 0.875rem auto;
+                background-position: center;
+            }
+
+            .nfsbird .md\:rd-icon-el.rd-no-icon {
+    background-image: none;
+  }
+        .nfsbird .md\:rd-inline-icon-w-2 svg {
+    height: auto;
+    width: 0.5rem;
+  }
+        .nfsbird .md\:rd-inline-icon-w-2\.5 svg {
+    height: auto;
+    width: 0.625rem;
+  }
+        .nfsbird .md\:rd-inline-icon-w-4 svg {
+    height: auto;
+    width: 1rem;
+  }
+        .nfsbird .md\:rd-inline-icon-w-4\.5 svg {
+    height: auto;
+    width: 1.125rem;
+  }
+        .nfsbird .md\:rd-inline-icon-h-6 svg {
+    height: 1.5rem;
+    width: auto;
+  }
+    .nfsbird .md\:rd-no-container {
+    width: auto;
+    max-width: none;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+    .nfsbird .md\:placeholder\:rd-text-brand-black::-webkit-input-placeholder {
+    color: rgba(45, 45, 45, 1);
+  }
+    .nfsbird .md\:placeholder\:rd-text-brand-black::-moz-placeholder {
+    color: rgba(45, 45, 45, 1);
+  }
+    .nfsbird .md\:placeholder\:rd-text-brand-black:-ms-input-placeholder {
+    color: rgba(45, 45, 45, 1);
+  }
+    .nfsbird .md\:placeholder\:rd-text-brand-black::-ms-input-placeholder {
+    color: rgba(45, 45, 45, 1);
+  }
+    .nfsbird .md\:placeholder\:rd-text-brand-black::placeholder {
+    color: rgba(45, 45, 45, 1);
+  }
+    .nfsbird .md\:first\:rd-mb-0:first-child {
+    margin-bottom: 0px;
+  }
+    .nfsbird .md\:first\:rd-ml-0:first-child {
+    margin-left: 0px;
+  }
+    .nfsbird .md\:first\:rd-border-b-0:first-child {
+    border-bottom-width: 0px;
+  }
+    .nfsbird .md\:first\:rd-pb-0:first-child {
+    padding-bottom: 0px;
+  }
+    .nfsbird .md\:first\:rd-pt-0:first-child {
+    padding-top: 0px;
+  }
+    .nfsbird .last\:md\:rd-mr-0:last-child {
+    margin-right: 0px;
+  }
+    .nfsbird .md\:last\:rd-mb-0:last-child {
+    margin-bottom: 0px;
+  }
+    .nfsbird .md\:last\:rd-mr-0:last-child {
+    margin-right: 0px;
+  }
+    .nfsbird .md\:last\:rd-border-none:last-child {
+    border-style: none;
+  }
+    .nfsbird .md\:last\:rd-pb-0:last-child {
+    padding-bottom: 0px;
+  }
+    .nfsbird .md\:odd\:rd-mr-0:nth-child(odd) {
+    margin-right: 0px;
+  }
+    .nfsbird .md\:even\:rd-ml-0:nth-child(even) {
+    margin-left: 0px;
+  }
+    .nfsbird .md\:hover\:rd-bg-brand-blue:hover {
+    background-color: rgba(0, 177, 242, 1);
+  }
+    .nfsbird .md\:hover\:rd-bg-brand-light-grey-alt-2:hover {
+    background-color: rgb(225, 225, 225);
+  }
+    .nfsbird .md\:hover\:rd-bg-brand-lightish-grey:hover {
+    background-color: rgba(138, 138, 150, 1);
+  }
+    .nfsbird .md\:hover\:rd-bg-brand-slightly-darker-blue:hover {
+    background-color: rgb(0, 168, 230);
+  }
+    .nfsbird .md\:hover\:rd-bg-brand-white:hover {
+    background-color: rgba(255, 255, 255, 1);
+  }
+    .nfsbird .md\:hover\:rd-text-brand-black:hover {
+    color: rgba(45, 45, 45, 1);
+  }
+    .nfsbird .md\:hover\:rd-text-brand-blue:hover {
+    color: rgba(0, 177, 242, 1);
+  }
+    .nfsbird .md\:hover\:rd-text-brand-white:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+    .nfsbird .md\:hover\:rd-opacity-80:hover {
+    opacity: 0.8;
+  }
+    .nfsbird .md\:focus\:rd-w-52:focus {
+    width: 13rem;
+  }
+    .nfsbird .focus\:md\:rd-bg-brand-white:focus {
+    background-color: rgba(255, 255, 255, 1);
+  }
+    .nfsbird .md\:focus\:rd-pl-4:focus {
+    padding-left: 1rem;
+  }
+    .nfsbird .md\:focus\:rd-pl-4\.5:focus {
+    padding-left: 1.125rem;
+  }
+    .nfsbird .rd-group\/helper-btn:hover .md\:group-hover\/helper-btn\:rd-bg-brand-blue {
+    background-color: rgba(0, 177, 242, 1);
+  }
+    .nfsbird .rd-group\/helper-btn:hover .md\:group-hover\/helper-btn\:rd-text-brand-white {
+    color: rgba(255, 255, 255, 1);
+  }
+    .nfsbird .rd-group:hover .md\:group-hover\:rd-text-brand-blue {
+    color: rgba(0, 177, 242, 1);
+  }
+    .nfsbird .rd-group:hover .md\:group-hover\:rd-text-brand-white {
+    color: rgba(255, 255, 255, 1);
+  }
+    .nfsbird .rd-group:hover .md\:group-hover\:rd-flip-vertical {
+        -webkit-transform: rotateX(180deg);
+           -moz-transform: rotateX(180deg);
+                transform: rotateX(180deg);
+    }
+    .nfsbird .rd-peer:focus ~ .md\:peer-focus\:rd-left-auto {
+    left: auto;
+  }
+    .nfsbird .rd-peer:focus ~ .md\:peer-focus\:rd-text-brand-black-transparent-50 {
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+@media (min-width: 1200px) {
+
+  .nfsbird .lg\:rd-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+  }
+
+  .nfsbird .lg\:rd-h-3\/4 {
+    height: 75%;
+  }
+
+  .nfsbird .lg\:rd-w-1\/3 {
+    width: 33.333333%;
+  }
+
+  .nfsbird .lg\:rd-max-w-\[83\.33\%\] {
+    max-width: 83.33%;
+  }
+
+  .nfsbird .lg\:rd-items-center {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+            align-items: center;
+  }
+
+  .nfsbird .lg\:rd-justify-between {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+            justify-content: space-between;
+  }
+
+  .nfsbird .lg\:focus\:rd-w-72:focus {
+    width: 18rem;
+  }
+}
+@media (min-width: 1536px) {
+
+  .nfsbird .xl\:-rd-mb-14 {
+    margin-bottom: -3.5rem;
+  }
+
+  .nfsbird .xl\:rd-mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
+  .nfsbird .xl\:rd-mb-12 {
+    margin-bottom: 3rem;
+  }
+
+  .nfsbird .xl\:rd-mb-3 {
+    margin-bottom: 0.75rem;
+  }
+
+  .nfsbird .xl\:rd-mb-3\.5 {
+    margin-bottom: 0.875rem;
+  }
+
+  .nfsbird .xl\:rd-mb-4 {
+    margin-bottom: 1rem;
+  }
+
+  .nfsbird .xl\:rd-mb-4\.5 {
+    margin-bottom: 1.125rem;
+  }
+
+  .nfsbird .xl\:rd-mb-7 {
+    margin-bottom: 1.75rem;
+  }
+
+  .nfsbird .xl\:rd-mb-7\.5 {
+    margin-bottom: 1.875rem;
+  }
+
+  .nfsbird .xl\:rd-mt-4 {
+    margin-top: 1rem;
+  }
+
+  .nfsbird .xl\:rd-mt-4\.5 {
+    margin-top: 1.125rem;
+  }
+
+  .nfsbird .xl\:rd-h-14 {
+    height: 3.5rem;
+  }
+
+  .nfsbird .xl\:rd-w-14 {
+    width: 3.5rem;
+  }
+
+  .nfsbird .xl\:rd-w-28 {
+    width: 7rem;
+  }
+
+  .nfsbird .xl\:rd-w-\[200px\] {
+    width: 200px;
+  }
+
+  .nfsbird .xl\:rd-min-w-49 {
+    min-width: 12.25rem;
+  }
+
+  .nfsbird .xl\:rd-p-7 {
+    padding: 1.75rem;
+  }
+
+  .nfsbird .xl\:rd-py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .nfsbird .xl\:rd-py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .nfsbird .xl\:rd-py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .nfsbird .xl\:rd-py-5\.5 {
+    padding-top: 1.375rem;
+    padding-bottom: 1.375rem;
+  }
+
+  .nfsbird .xl\:rd-pl-14 {
+    padding-left: 3.5rem;
+  }
+
+  .nfsbird .xl\:rd-pr-2 {
+    padding-right: 0.5rem;
+  }
+
+  .nfsbird .xl\:rd-pt-12 {
+    padding-top: 3rem;
+  }
+
+  .nfsbird .xl\:rd-text-2xl-alt {
+    font-size: 1.625rem;
+  }
+
+  .nfsbird .xl\:rd-text-3xl-alt {
+    font-size: 2.25rem;
+  }
+
+  .nfsbird .xl\:rd-text-lg {
+    font-size: 1.125rem;
+  }
+
+  .nfsbird .xl\:rd-text-lg-alt {
+    font-size: 1.25rem;
+  }
+
+  .nfsbird .xl\:rd-text-sm {
+    font-size: 0.875rem;
+  }
+
+  .nfsbird .xl\:rd-text-sm-alt {
+    font-size: 0.8125rem;
+  }
+
+  .nfsbird .xl\:rd-text-xl-alt {
+    font-size: 1.375rem;
+  }
+        .nfsbird .xl\:rd-inline-icon-w-3 svg {
+    height: auto;
+    width: 0.75rem;
+  }
+        .nfsbird .xl\:rd-inline-icon-w-5 svg {
+    height: auto;
+    width: 1.25rem;
+  }
+        .nfsbird .xl\:rd-inline-icon-w-5\.5 svg {
+    height: auto;
+    width: 1.375rem;
+  }
+        .nfsbird .xl\:rd-inline-icon-h-9 svg {
+    height: 2.25rem;
+    width: auto;
+  }
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="460px" height="181px" viewBox="0 0 460 181" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 3</title>
+    <defs>
+        <linearGradient x1="68.0354818%" y1="17.6894424%" x2="31.5204106%" y2="77.3781858%" id="linearGradient-1">
+            <stop stop-color="#00B1F2" offset="0%"></stop>
+            <stop stop-color="#003A6A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#0EA8E5" offset="0%"></stop>
+            <stop stop-color="#066FC6" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="46.0963957%" y1="-1.66769991%" x2="42.0506564%" y2="103.103059%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#1275C8" offset="100%"></stop>
+            <stop stop-color="#1275C8" offset="100%"></stop>
+        </linearGradient>
+        <ellipse id="path-4" cx="118.467548" cy="51" rx="51.5324519" ry="51"></ellipse>
+        <filter x="-24.7%" y="-25.0%" width="149.5%" height="150.0%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.835638773   0 0 0 0 0.835638773   0 0 0 0 0.9159024  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-2-(Final)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Color-Exploration_Solid-Colors_4-Copy-25" transform="translate(-920.000000, -902.000000)">
+            <g id="Group-3" transform="translate(920.000000, 907.000000)">
+                <g id="Group-8-Copy" transform="translate(145.000000, 12.000000)">
+                    <rect id="Rectangle-2" fill="url(#linearGradient-1)" x="0" y="3.1875" width="150.384615" height="95.625" rx="47.8125"></rect>
+                    <rect id="Rectangle-2-Copy" stroke="url(#linearGradient-3)" stroke-width="1.6" fill="url(#linearGradient-2)" x="0.168833514" y="3.21259843" width="137.276995" height="95.5748031" rx="47.7874016"></rect>
+                    <g id="Oval-2-Copy">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    </g>
+                </g>
+                <rect id="Rectangle" x="0" y="0" width="460" height="176"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
